@@ -1,0 +1,103 @@
+species	individual ID	sample ID	tissue	notes	reads - round 1	reads - round 2	reads - round 3	reads - round 4	total reads
+D. atroscutellata	021A	021Ab	carcass	ovipositor removed			14,147,182		14,147,182
+D. atroscutellata	021A	021An	head				14,091,512		14,091,512
+D. atroscutellata	021A	021Ao	ovary				17,225,774		17,225,774
+D. atroscutellata	029D	029Db	carcass	ovipositor removed				13,664,824	13,664,824
+D. atroscutellata	029D	029Dn	head					18,613,630	18,613,630
+D. atroscutellata	029D	029Do	ovary	no vitellogenic eggs				19,916,293	19,916,293
+D. cf dives	16.1-1	16.1.1	ovary		12,041,362				12,041,362
+D. cf dives	16.1-1	16.1.2	head		18,382,021				18,382,021
+D. cf dives	16.1-1	16.1.4	carcass		21,990,829				21,990,829
+D. cf dives	16.2-1	16.2.1	ovary		16,508,284				16,508,284
+D. cf dives	16.2-1	16.2.2	head			11,288,812			11,288,812
+D. cf dives	16.2-1	16.2.4	carcass		14,384,696				14,384,696
+D. macrothrix	8.0-1	8.0.1	ovary		625,317	337,147			962,464
+D. macrothrix	8.0-1	8.0.2	head		28,027,155	12,695,316			40,722,471
+D. macrothrix	8.0-1	8.0.4	carcass		18,125,412				18,125,412
+D. macrothrix	8.0-2	8.0.6	ovary		15,583,003				15,583,003
+D. macrothrix	8.0-2	8.0.7	head					12,639,355	12,639,355
+D. macrothrix	8.0-2	8.0.9	carcass		42,026,251				42,026,251
+D. macrothrix	8.0-3	8.0.12	carcass		29,231,317				29,231,317
+D. macrothrix	8.0-3	8.0.15	ovary		35,169,909				35,169,909
+D. macrothrix	8.0-3	8.0.16	head		17,682,909				17,682,909
+D. mimica	040B	040Bb	carcass					13,288,927	13,288,927
+D. mimica	040B	040Bn	head					12,473,218	12,473,218
+D. mimica	040B	040Bo	ovary					14,622,979	14,622,979
+D. mimica	040D	040Db	carcass				20,653,357		20,653,357
+D. mimica	040D	040Db	head				12,923,155		12,923,155
+D. mimica	040D	040Db	ovary				17,181,968		17,181,968
+D. mimica	18.0-3	18.0.14	ovary				13,450,864	17,450,051	30,900,915
+D. mimica	18.0-3	18.0.15	head	sequencing failed					0
+D. mimica	18.0-3	18.0.17	carcass		19,971,465			11,948,038	31,919,503
+D. nanella	002C	002Cb	carcass			15,668,215			15,668,215
+D. nanella	002C	002Cn	head			18,850,083			18,850,083
+D. nanella	002C	002Co	ovary			19,143,364			19,143,364
+D. nanella	032A	032Ab	carcass	ovipositor removed			16,985,268		16,985,268
+D. nanella	032A	032An	head				15,262,003		15,262,003
+D. nanella	032A	032Ao	ovary				26,566,152		26,566,152
+D. nanella	032B	032Bb	carcass	ovipositor removed				13,166,018	13,166,018
+D. nanella	032B	032Bn	head					7,720,333	7,720,333
+D. nanella	032B	032Bo	ovary					10,507,831	10,507,831
+D. picticornis	016B	016Bb	carcass					13,944,238	13,944,238
+D. picticornis	016B	016Bn	head					12,710,348	12,710,348
+D. picticornis	016B	016Bo	ovary					8,261,788	8,261,788
+D. picticornis	016C	016Cb	carcass	ovipositor removed		19,183,647			19,183,647
+D. picticornis	016C	016Cn	head			20,597,014			20,597,014
+D. picticornis	016C	016Co	ovary			18,242,638			18,242,638
+D. picticornis	028A	028Ab	carcass	ovipositor removed			17,704,561	21,917,683	39,622,244
+D. picticornis	028A	028An	head				15,060,854	12,034,753	27,095,607
+D. picticornis	028A	028Ao	ovary				25,988,121	10,261,716	36,249,837
+D. primaeva	008A	008Ab	carcass	ovipositor removed				21,917,683	21,917,683
+D. primaeva	008A	008An	head					12,034,753	12,034,753
+D. primaeva	008A	008Ao	ovary					10,261,716	10,261,716
+D. primaeva	012A	012Ab	carcass			16,297,595			16,297,595
+D. primaeva	012A	012An	head			12,515,877			12,515,877
+D. primaeva	012A	012Ao	ovary	all oocytes were at the same stage		14,945,335			14,945,335
+D. primaeva	024B	024Bb	carcass				21,578,797		21,578,797
+D. primaeva	024B	024Bn	head				13,850,246		13,850,246
+D. primaeva	024B	024Bo	ovary	all oocytes were at the same stage			12,001,961		12,001,961
+D. sproati	106B	106Bb	carcass			17,653,753			17,653,753
+D. sproati	106B	106Bn	ovary			10,220,778			10,220,778
+D. sproati	106B	106Bo	head			15,615,762			15,615,762
+D. sproati	7.1-1	7.1.1	ovary		9,527,229				9,527,229
+D. sproati	7.1-1	7.1.2	head	sequencing failed					0
+D. sproati	7.1-1	7.1.4	carcass		13,815,824				13,815,824
+D. sproati	7.2-1	7.2.1	carcass		22,462,042				22,462,042
+D. sproati	7.2-1	7.2.2	head		21,654,908				21,654,908
+D. sproati	7.2-1	7.2.4	ovary		31,064,408				31,064,408
+D. tanythrix	043C	043Cb	carcass			11,381,085			11,381,085
+D. tanythrix	043C	043Cn	head			9,395,340			9,395,340
+D. tanythrix	043C	043Co	ovary			13,769,669			13,769,669
+D. tanythrix	056A	056Ab	carcass				20,904,414		20,904,414
+D. tanythrix	056A	056An	head				13,824,612		13,824,612
+D. tanythrix	056A	056Ao	ovary				17,772,798		17,772,798
+D. tanythrix	40.2-1	40.2.1	ovary		30,223,622				30,223,622
+D. tanythrix	40.2-1	40.2.2	head		27,274,868		17,405,688	17,790,177	62,470,733
+D. tanythrix	40.2-1	40.2.4	carcass		22,021,646	16,772,624			38,794,270
+S. cyrtandrae	088A	088Ab	carcass			19,038,552			19,038,552
+S. cyrtandrae	088A	088An	head			12,179,789			12,179,789
+S. cyrtandrae	088A	088Ao	ovary			13,439,568			13,439,568
+S. cyrtandrae	088B	088Bb	carcass				11,543,268		11,543,268
+S. cyrtandrae	088B	088Bn	head				12,904,077		12,904,077
+S. cyrtandrae	088B	088Bo	ovary				11,569,554		11,569,554
+S. cyrtandrae	088C	088Cb	carcass					15,301,343	15,301,343
+S. cyrtandrae	088C	088Cn	head					8,191,593	8,191,593
+S. cyrtandrae	088C	088Co	ovary					7,158,247	7,158,247
+S. varia	CFA	CFAb	carcass			14,094,153			14,094,153
+S. varia	CFA	CFAn	head			10,655,605			10,655,605
+S. varia	CFA	CFAo	ovary			10,702,817			10,702,817
+S. varia	CFB	CFBb	carcass				8,049,520		8,049,520
+S. varia	CFB	CFBn	head				7,357,905		7,357,905
+S. varia	CFB	CFBo	ovary				12,557,066		12,557,066
+S. varia	CFC	CFCb	carcass					11,159,366	11,159,366
+S. varia	CFC	CFCn	head					11,517,456	11,517,456
+S. varia	CFC	CFCo	ovary					10,874,670	10,874,670
+S. varipicta	020B	020Bb	carcass			8,132,403			8,132,403
+S. varipicta	020B	020Bn	head			14,331,603			14,331,603
+S. varipicta	020B	020Bo	ovary			8,192,636			8,192,636
+S. varipicta	020C	020Cb	carcass	ovipositor removed			16,584,774		16,584,774
+S. varipicta	020C	020Cn	head				13,783,546		13,783,546
+S. varipicta	020C	020Co	ovary				17,539,765		17,539,765
+S. varipicta	020D	020Db	carcass	ovipositor removed				19,358,586	19,358,586
+S. varipicta	020D	020Dn	head					19,832,422	19,832,422
+S. varipicta	020D	020Do	ovary					13,226,137	13,226,137

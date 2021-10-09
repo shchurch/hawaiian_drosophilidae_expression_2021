@@ -1,0 +1,31 @@
+individual	sample	species match	reference male	external reference sequence	barcode sequence used for final identification	notes
+040B	040Bb	D. mimica	yes	yes	16S	
+040C	040Ctxt	D. mimica	yes	yes	16S	
+040D	040Db	D. mimica	yes	yes	16S	
+18.0-3	18.0.17	D. mimica	yes	yes	16S	
+CFA	CFAb	S. varia	yes	yes	COI	
+CFB	CFBb	S. varia	yes	yes	COI	
+CFC	CFCb	S. varia	yes	yes	COI	
+088A	088Ab	S. cyrtandrae	none	yes	COII	
+088B	088Bb	S. cyrtandrae	none	yes	COII	
+088C	088Cb	S. cyrtandrae	none	yes	COII	
+021A	021Ab	D. atroscutellata	yes	yes	COII	
+029A	029Atxt	D. atroscutellata	yes	yes	COII	
+029D	029Db	D. atroscutellata	yes	yes	COII	
+002C	002Cb	D. nanella	yes	yes	16S, COII	
+002D	002Dtxt	D. nanella	yes	yes	16S, COII	
+032A	032Ab	D. nanella	yes	yes	16S, COII	
+032B	032Bb	D. nanella	yes	yes	16S, COII	
+106A	106Atxt	D. sproati	none	none	COII	matched to other females, morphology is distinctive for females in this species
+106B	106Bb	D. sproati	none	none	COII	matched to other females, morphology is distinctive for females in this species
+7.1-1	7.1.4	D. sproati	none	none	COII	matched to other females, morphology is distinctive for females in this species
+043C	043Cb	D. tanythrix	yes	yes	COII	barcode sequences for D. cognata and D. yooni males suggest hidden complexity in this group
+043D	043Dtxt	D. tanythrix	yes	yes	COII	barcode sequences for D. cognata and D. yooni males suggest hidden complexity in this group
+056A	056Ab	D. tanythrix	yes	yes	COII	barcode sequences for D. cognata and D. yooni males suggest hidden complexity in this group
+40.2-1	40.2.2	D. tanythrix	yes	yes	COII	barcode sequences for D. cognata and D. yooni males suggest hidden complexity in this group
+020A	020Atxt	S. varipicta	yes	yes	COII	
+020B	020Bb	S. varipicta	yes	yes	COII	
+020C	020Cb	S. varipicta	yes	yes	COII	
+020D	020Db	S. varipicta	yes	yes	COII	
+16.1-1	16.1.4	D. cf dives	none	none	16S, COII	found no matching reference sequence and no males were caught
+16.2-1	16.2.4	D. cf dives	none	none	16S, COII	found no matching reference sequence and no males were caught
