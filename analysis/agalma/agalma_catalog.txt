@@ -1,0 +1,1936 @@
+agalma -t 1 -m 8G catalog insert -i 002Cb -l 002Cb -v 002C -t carcass -e 2017-03-04 -q 180724_NS500422 -n 937302 -d 146517 -s "Drosophila nanella" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_002Cb_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 002Cn -l 002Cn -v 002C -t head -e 2017-03-04 -q 180724_NS500422 -n 937302 -d 146517 -s "Drosophila nanella" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_002Cn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 002Co -l 002Co -v 002C -t ovary -e 2017-03-04 -q 180724_NS500422 -n 937302 -d 146517 -s "Drosophila nanella" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_002Co_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 008Ab -l 008Ab -v 008A -t carcass -e 2017-03-24 -q 180723_NB501677 -n 46814 -d 146212 -s "Drosophila primaeva" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_008Ab_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 008An -l 008An -v 008A -t head -e 2017-03-24 -q 180723_NB501677 -n 46814 -d 146212 -s "Drosophila primaeva" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_008An_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 008Ao -l 008Ao -v 008A -t ovary -e 2017-03-24 -q 180723_NB501677 -n 46814 -d 146212 -s "Drosophila primaeva" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_008Ao_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 012Ab -l 012Ab -v 012A -t carcass -e 2017-03-24 -q 180724_NS500422 -n 46814 -d 146212 -s "Drosophila primaeva" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_012Ab_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 012An -l 012An -v 012A -t head -e 2017-03-24 -q 180724_NS500422 -n 46814 -d 146212 -s "Drosophila primaeva" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_012An_R1.fastq.gz
+
+agalma -t 1 -m 8G catalog insert -i 012Ao -l 012Ao -v 012A -t ovary -e 2017-03-24 -q 180724_NS500422 -n 46814 -d 146212 -s "Drosophila primaeva" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_012Ao_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 016Bb -l 016Bb -v 016B -t carcass -e 2017-03-24 -q 180723_NB501677 -n 7235 -d 146538 -s "Drosophila picticornis" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_016Bb_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 016Bn -l 016Bn -v 016B -t head -e 2017-03-24 -q 180723_NB501677 -n 7235 -d 146538 -s "Drosophila picticornis" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_016Bn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 016Bo -l 016Bo -v 016B -t ovary -e 2017-03-24 -q 180723_NB501677 -n 7235 -d 146538 -s "Drosophila picticornis" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_016Bo_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 016Cb -l 016Cb -v 016C -t carcass -e 2017-03-24 -q 180724_NS500422 -n 7235 -d 146538 -s "Drosophila picticornis" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_016Cb_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 016Cn -l 016Cn -v 016C -t head -e 2017-03-24 -q 180724_NS500422 -n 7235 -d 146538 -s "Drosophila picticornis" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_016Cn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 016Co -l 016Co -v 016C -t ovary -e 2017-03-24 -q 180724_NS500422 -n 7235 -d 146538 -s "Drosophila picticornis" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_016Co_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 020Bb -l 020Bb -v 020B -t carcass -e 2017-03-21 -q 180724_NS500422 -n 938077 -d 146680 -s "Scaptomyza varipicta" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_020Bb_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 020Bn -l 020Bn -v 020B -t head -e 2017-03-21 -q 180724_NS500422 -n 938077 -d 146680 -s "Scaptomyza varipicta" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_020Bn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 020Bo -l 020Bo -v 020B -t ovary -e 2017-03-21 -q 180724_NS500422 -n 938077 -d 146680 -s "Scaptomyza varipicta" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_020Bo_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 020Cb -l 020Cb -v 020C -t carcass -e 2017-03-21 -q 180724_NB502063 -n 938077 -d 146680 -s "Scaptomyza varipicta" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_020Cb_R1.fastq.gz
+
+agalma -t 1 -m 8G catalog insert -i 020Cn -l 020Cn -v 020C -t head -e 2017-03-21 -q 180724_NB502063 -n 938077 -d 146680 -s "Scaptomyza varipicta" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_020Cn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 020Co -l 020Co -v 020C -t ovary -e 2017-03-21 -q 180724_NB502063 -n 938077 -d 146680 -s "Scaptomyza varipicta" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_020Co_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 020Db -l 020Db -v 020D -t carcass -e 2017-03-21 -q 180723_NB501677 -n 938077 -d 146680 -s "Scaptomyza varipicta" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_020Db_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 020Dn -l 020Dn -v 020D -t head -e 2017-03-21 -q 180723_NB501677 -n 938077 -d 146680 -s "Scaptomyza varipicta" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_020Dn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 020Do -l 020Do -v 020D -t ovary -e 2017-03-21 -q 180723_NB501677 -n 938077 -d 146680 -s "Scaptomyza varipicta" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_020Do_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 021Ab -l 021Ab -v 021A -t carcass -e 2017-03-23 -q 180724_NB502063 -n 937262 -d 146212 -s "Drosophila atroscutellata" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_021Ab_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 021An -l 021An -v 021A -t head -e 2017-03-23 -q 180724_NB502063 -n 937262 -d 146212 -s "Drosophila atroscutellata" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_021An_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 021Ao -l 021Ao -v 021A -t ovary -e 2017-03-23 -q 180724_NB502063 -n 937262 -d 146212 -s "Drosophila atroscutellata" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_021Ao_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 024Bb -l 024Bb -v 024B -t carcass -e 2017-03-24 -q 180724_NB502063 -n 46814 -d 146212 -s "Drosophila primaeva" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_024Bb_R1.fastq.gz
+
+agalma -t 1 -m 8G catalog insert -i 024Bn -l 024Bn -v 024B -t head -e 2017-03-24 -q 180724_NB502063 -n 46814 -d 146212 -s "Drosophila primaeva" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_024Bn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 024Bo -l 024Bo -v 024B -t ovary -e 2017-03-24 -q 180724_NB502063 -n 46814 -d 146212 -s "Drosophila primaeva" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_024Bo_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 028Ab -l 028Ab -v 028A -t carcass -e 2017-03-24 -q 180724_NB502063 -n 7235 -d 146538 -s "Drosophila picticornis" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_028Ab_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 028An -l 028An -v 028A -t head -e 2017-03-24 -q 180724_NB502063 -n 7235 -d 146538 -s "Drosophila picticornis" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_028An_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 028Ao -l 028Ao -v 028A -t ovary -e 2017-03-24 -q 180724_NB502063 -n 7235 -d 146538 -s "Drosophila picticornis" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_028Ao_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 029Db -l 029Db -v 029D -t carcass -e 2017-03-23 -q 180723_NB501677 -n 937262 -d 146212 -s "Drosophila atroscutellata" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_029Db_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 029Dn -l 029Dn -v 029D -t head -e 2017-03-23 -q 180723_NB501677 -n 937262 -d 146212 -s "Drosophila atroscutellata" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_029Dn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 029Do -l 029Do -v 029D -t ovary -e 2017-03-23 -q 180723_NB501677 -n 937262 -d 146212 -s "Drosophila atroscutellata" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_029Do_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 032Ab -l 032Ab -v 032A -t carcass -e 2017-03-04 -q 180724_NB502063 -n 937302 -d 146517 -s "Drosophila nanella" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_032Ab_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 032An -l 032An -v 032A -t head -e 2017-03-04 -q 180724_NB502063 -n 937302 -d 146517 -s "Drosophila nanella" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_032An_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 032Ao -l 032Ao -v 032A -t ovary -e 2017-03-04 -q 180724_NB502063 -n 937302 -d 146517 -s "Drosophila nanella" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_032Ao_R1.fastq.gz
+
+agalma -t 1 -m 8G catalog insert -i 032Bb -l 032Bb -v 032B -t carcass -e 2017-03-04 -q 180723_NB501677 -n 937302 -d 146517 -s "Drosophila nanella" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_032Bb_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 032Bn -l 032Bn -v 032B -t head -e 2017-03-04 -q 180723_NB501677 -n 937302 -d 146517 -s "Drosophila nanella" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_032Bn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 032Bo -l 032Bo -v 032B -t ovary -e 2017-03-04 -q 180723_NB501677 -n 937302 -d 146517 -s "Drosophila nanella" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_032Bo_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 040Bb -l 040Bb -v 040B -t carcass -e 2017-02-11 -q 180723_NB501677 -n 7270 -d 146509 -s "Drosophila mimica" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_040Bb_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 040Bn -l 040Bn -v 040B -t head -e 2017-02-11 -q 180723_NB501677 -n 7270 -d 146509 -s "Drosophila mimica" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_040Bn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 040Bo -l 040Bo -v 040B -t ovary -e 2017-02-11 -q 180723_NB501677 -n 7270 -d 146509 -s "Drosophila mimica" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_040Bo_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 043Cb -l 043Cb -v 043C -t carcass -e 2017-01-24 -q 180724_NS500422 -n 46827 -d 146774 -s "Drosophila tanythrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_043Cb_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 043Cn -l 043Cn -v 043C -t head -e 2017-01-24 -q 180724_NS500422 -n 46827 -d 146774 -s "Drosophila tanythrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_043Cn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 043Co -l 043Co -v 043C -t ovary -e 2017-01-24 -q 180724_NS500422 -n 46827 -d 146774 -s "Drosophila tanythrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_043Co_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 040Db -l 040Db -v 040D -t carcass -e 2017-02-11 -q 180724_NB502063 -n 7270 -d 146509 -s "Drosophila mimica" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_040Db_R1.fastq.gz
+
+agalma -t 1 -m 8G catalog insert -i 040Dn -l 040Dn -v 040D -t head -e 2017-02-11 -q 180724_NB502063 -n 7270 -d 146509 -s "Drosophila mimica" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_040Dn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 040Do -l 040Do -v 040D -t ovary -e 2017-02-11 -q 180724_NB502063 -n 7270 -d 146509 -s "Drosophila mimica" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_040Do_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 056Ab -l 056Ab -v 056A -t carcass -e 2017-01-24 -q 180724_NB502063 -n 46827 -d 146774 -s "Drosophila tanythrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_056Ab_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 056An -l 056An -v 056A -t head -e 2017-01-24 -q 180724_NB502063 -n 46827 -d 146774 -s "Drosophila tanythrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_056An_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 056Ao -l 056Ao -v 056A -t ovary -e 2017-01-24 -q 180724_NB502063 -n 46827 -d 146774 -s "Drosophila tanythrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_056Ao_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 088Ab -l 088Ab -v 088A -t carcass -e 2017-03-21 -q 180724_NS500422 -n 504600 -d 146618 -s "Scaptomyza cyrtandrae" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_088Ab_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 088An -l 088An -v 088A -t head -e 2017-03-21 -q 180724_NS500422 -n 504600 -d 146618 -s "Scaptomyza cyrtandrae" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_088An_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 088Ao -l 088Ao -v 088A -t ovary -e 2017-03-21 -q 180724_NS500422 -n 504600 -d 146618 -s "Scaptomyza cyrtandrae" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_088Ao_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 088Bb -l 088Bb -v 088B -t carcass -e 2017-03-21 -q 180724_NB502063 -n 504600 -d 146618 -s "Scaptomyza cyrtandrae" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_088Bb_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 088Bn -l 088Bn -v 088B -t head -e 2017-03-21 -q 180724_NB502063 -n 504600 -d 146618 -s "Scaptomyza cyrtandrae" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_088Bn_R1.fastq.gz
+
+agalma -t 1 -m 8G catalog insert -i 088Bo -l 088Bo -v 088B -t ovary -e 2017-03-21 -q 180724_NB502063 -n 504600 -d 146618 -s "Scaptomyza cyrtandrae" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_088Bo_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 088Cb -l 088Cb -v 088C -t carcass -e 2017-03-21 -q 180723_NB501677 -n 504600 -d 146618 -s "Scaptomyza cyrtandrae" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_088Cb_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 088Cn -l 088Cn -v 088C -t head -e 2017-03-21 -q 180723_NB501677 -n 504600 -d 146618 -s "Scaptomyza cyrtandrae" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_088Cn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 088Co -l 088Co -v 088C -t ovary -e 2017-03-21 -q 180723_NB501677 -n 504600 -d 146618 -s "Scaptomyza cyrtandrae" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_088Co_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 106Bb -l 106Bb -v 106B -t carcass -e 2017-03-23 -q 180724_NS500422 -n 7289 -d 146212 -s "Drosophila sproati" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_106Bb_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 106Bn -l 106Bn -v 106B -t head -e 2017-03-23 -q 180724_NS500422 -n 7289 -d 146212 -s "Drosophila sproati" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_106Bn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 106Bo -l 106Bo -v 106B -t ovary -e 2017-03-23 -q 180724_NS500422 -n 7289 -d 146212 -s "Drosophila sproati" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_106Bo_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 18_0_14 -l 18_0_14 -v 18_0_3 -t ovary -e 2016-11-15 -q 180723_NB501677 -n 7270 -d 146509 -s "Drosophila mimica" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_18_0_14_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 18_0_14_resequence1 -l 18_0_14_resequence1 -v 18_0_3 -t ovary -e 2016-11-15 -q 180724_NB502063 -n 7270 -d 146509 -s "Drosophila mimica" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_18_0_14_R1.fastq.gz
+
+agalma -t 1 -m 8G catalog insert -i 18_0_17 -l 18_0_17 -v 18_0_3 -t carcass -e 2016-11-15 -q 170310_NB501677 -n 7270 -d 146509 -s "Drosophila mimica" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_18_0_17_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 18_0_17_resequence1 -l 18_0_17_resequence1 -v 18_0_3 -t carcass -e 2016-11-15 -q 180723_NB501677 -n 7270 -d 146509 -s "Drosophila mimica" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_18_0_17_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 40_2_1 -l 40_2_1 -v 40_2_1 -t ovary -e 2016-08-18 -q 170310_NB501677 -n 46827 -d 146774 -s "Drosophila tanythrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_40_2_1_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 40_2_2 -l 40_2_2 -v 40_2_1 -t head -e 2016-08-18 -q 170310_NB501677 -n 46827 -d 146774 -s "Drosophila tanythrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_40_2_2_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 40_2_2_resequence1 -l 40_2_2_resequence1 -v 40_2_1 -t head -e 2016-08-18 -q 180723_NB501677 -n 46827 -d 146774 -s "Drosophila tanythrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_40_2_2_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 40_2_2_resequence2 -l 40_2_2_resequence2 -v 40_2_1 -t head -e 2016-08-18 -q 180724_NB502063 -n 46827 -d 146774 -s "Drosophila tanythrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_40_2_2_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 40_2_4 -l 40_2_4 -v 40_2_1 -t carcass -e 2016-08-18 -q 170310_NB501677 -n 46827 -d 146774 -s "Drosophila tanythrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_40_2_4_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 40_2_4_resequence1 -l 40_2_4_resequence1 -v 40_2_1 -t carcass -e 2016-08-18 -q 180724_NS500422 -n 46827 -d 146774 -s "Drosophila tanythrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_40_2_4_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 7_1_1 -l 7_1_1 -v 7_1_1 -t ovary -e 2016-11-15 -q 170310_NB501677 -n 7289 -d 146212 -s "Drosophila sproati" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_7_1_1_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 7_1_4 -l 7_1_4 -v 7_1_1 -t carcass -e 2016-11-15 -q 170310_NB501677 -n 7289 -d 146212 -s "Drosophila sproati" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_7_1_4_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 7_2_1 -l 7_2_1 -v 7_2_1 -t carcass -e 2016-11-15 -q 170310_NB501677 -n 7289 -d 146212 -s "Drosophila sproati" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_7_2_1_R1.fastq.gz
+
+agalma -t 1 -m 8G catalog insert -i 7_2_2 -l 7_2_2 -v 7_2_1 -t head -e 2016-11-15 -q 170310_NB501677 -n 7289 -d 146212 -s "Drosophila sproati" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_7_2_2_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 7_2_4 -l 7_2_4 -v 7_2_1 -t ovary -e 2016-11-15 -q 170310_NB501677 -n 7289 -d 146212 -s "Drosophila sproati" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_7_2_4_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 8_0_12 -l 8_0_12 -v 8_0_3 -t carcass -e 2016-11-15 -q 170310_NB501677 -n 46811 -d 146212 -s "Drosophila macrothrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_12_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 8_0_15 -l 8_0_15 -v 8_0_3 -t ovary -e 2016-11-15 -q 170310_NB501677 -n 46811 -d 146212 -s "Drosophila macrothrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_15_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 8_0_16 -l 8_0_16 -v 8_0_3 -t head -e 2016-11-15 -q 170310_NB501677 -n 46811 -d 146212 -s "Drosophila macrothrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_16_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 8_0_2 -l 8_0_2 -v 8_0_1 -t head -e 2016-11-15 -q 170310_NB501677 -n 46811 -d 146212 -s "Drosophila macrothrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_2_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 8_0_2_resequence1 -l 8_0_2_resequence1 -v 8_0_1 -t head -e 2016-11-15 -q 180724_NS500422 -n 46811 -d 146212 -s "Drosophila macrothrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_8_0_2_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 8_0_4 -l 8_0_4 -v 8_0_1 -t carcass -e 2016-11-15 -q 170310_NB501677 -n 46811 -d 146212 -s "Drosophila macrothrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_4_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 8_0_6 -l 8_0_6 -v 8_0_2 -t ovary -e 2016-11-15 -q 170310_NB501677 -n 46811 -d 146212 -s "Drosophila macrothrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_6_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 8_0_7 -l 8_0_7 -v 8_0_2 -t head -e 2016-11-15 -q 180723_NB501677 -n 46811 -d 146212 -s "Drosophila macrothrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_8_0_7_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 8_0_9 -l 8_0_9 -v 8_0_2 -t carcass -e 2016-11-15 -q 170310_NB501677 -n 46811 -d 146212 -s "Drosophila macrothrix" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_9_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i CFAb -l CFAb -v CFA -t carcass -e 2017-03-04 -q 180724_NS500422 -n 1334225 -d 146764 -s "Scaptomyza varia" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_CFAb_R1.fastq.gz
+
+agalma -t 1 -m 8G catalog insert -i CFAn -l CFAn -v CFA -t head -e 2017-03-04 -q 180724_NS500422 -n 1334225 -d 146764 -s "Scaptomyza varia" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_CFAn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i CFAo -l CFAo -v CFA -t ovary -e 2017-03-04 -q 180724_NS500422 -n 1334225 -d 146764 -s "Scaptomyza varia" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_CFAo_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i CFBb -l CFBb -v CFB -t carcass -e 2017-03-04 -q 180724_NB502063 -n 1334225 -d 146764 -s "Scaptomyza varia" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_CFBb_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i CFBn -l CFBn -v CFB -t head -e 2017-03-04 -q 180724_NB502063 -n 1334225 -d 146764 -s "Scaptomyza varia" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_CFBn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i CFBo -l CFBo -v CFB -t ovary -e 2017-03-04 -q 180724_NB502063 -n 1334225 -d 146764 -s "Scaptomyza varia" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_CFBo_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i CFCb -l CFCb -v CFC -t carcass -e 2017-03-04 -q 180723_NB501677 -n 1334225 -d 146764 -s "Scaptomyza varia" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_CFCb_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i CFCn -l CFCn -v CFC -t head -e 2017-03-04 -q 180723_NB501677 -n 1334225 -d 146764 -s "Scaptomyza varia" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_CFCn_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i CFCo -l CFCo -v CFC -t ovary -e 2017-03-04 -q 180723_NB501677 -n 1334225 -d 146764 -s "Scaptomyza varia" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_CFCo_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 16_1_1 -l 16_1_1 -v 16_1_1 -t ovary -e 2016-11-15 -q 170310_NB501677 -d 146212 -s "Drosophila cfdives" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_16_1_1_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 16_1_2 -l 16_1_2 -v 16_1_1 -t head -e 2016-11-15 -q 170310_NB501677 -d 146212 -s "Drosophila cfdives" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_16_1_2_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 16_1_4 -l 16_1_4 -v 16_1_1 -t carcass -e 2016-11-15 -q 170310_NB501677 -d 146212 -s "Drosophila cfdives" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_16_1_4_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 16_2_1 -l 16_2_1 -v 16_2_1 -t ovary -e 2016-11-15 -q 170310_NB501677 -d 146212 -s "Drosophila cfdives" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_16_2_1_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 16_2_2 -l 16_2_2 -v 16_2_1 -t head -e 2016-11-15 -q 180724_NS500422 -d 146212 -s "Drosophila cfdives" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_16_2_2_R1.fastq.gz
+agalma -t 1 -m 8G catalog insert -i 16_2_4 -l 16_2_4 -v 16_2_1 -t carcass -e 2016-11-15 -q 170310_NB501677 -d 146212 -s "Drosophila cfdives" -p /n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_16_2_4_R1.fastq.gz
+
+(agalma_Sep2018) [shchurch@holy7c26601 assembly_phylogeny_expression_Hawaiian_Drosophila_June2021]$ agalma catalog all
+biolite.config.parse_env_resources: database=/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/agalma/data/agalma.sqlite
+002D [2021-06-09 18:49:20]
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/002Dtxt_R1.fastq.gz (2.4 GB)
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/002Dtxt_R2.fastq.gz (2.4 GB)
+  species: Drosophila nanella
+  ncbi_id: 937302
+  itis_id: 146517
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+025A [2021-06-09 18:50:15]
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/025Atxt_R1.fastq.gz (2.2 GB)
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/025Atxt_R2.fastq.gz (2.3 GB)
+  species: Drosophila picticornis
+  ncbi_id: 7235
+  itis_id: 146538
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+043D [2021-06-09 18:50:18]
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/043Dtxt_R1.fastq.gz (2.3 GB)
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/043Dtxt_R2.fastq.gz (2.4 GB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+106A [2021-06-09 18:50:23]
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/106Atxt_R1.fastq.gz (1.5 GB)
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/106Atxt_R2.fastq.gz (1.6 GB)
+  species: Drosophila sproati
+  ncbi_id: 7289
+  itis_id: 146212
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+008D [2021-06-09 18:50:43]
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/008Dtxt_R1.fastq.gz (2.0 GB)
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/008Dtxt_R2.fastq.gz (2.1 GB)
+  species: Drosophila primaeva
+  ncbi_id: 46814
+  itis_id: 146212
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+029A [2021-06-09 18:50:46]
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/029Atxt_R1.fastq.gz (2.6 GB)
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/029Atxt_R2.fastq.gz (2.7 GB)
+  species: Drosophila atroscutellata
+  ncbi_id: 937262
+  itis_id: 146212
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+055A [2021-06-09 18:50:50]
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/055Atxt_R1.fastq.gz (2.7 GB)
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/055Atxt_R2.fastq.gz (2.7 GB)
+  species: Drosophila macrothrix
+  ncbi_id: 46811
+  itis_id: 146212
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+16_1 [2021-06-09 18:50:54]
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/16_1_R1.fastq.gz (3.2 GB)
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/16_1_R2.fastq.gz (3.3 GB)
+  species: Drosophila cfdives
+  ncbi_id: None
+  itis_id: 146212
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+020A [2021-06-09 18:50:58]
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/020Atxt_R1.fastq.gz (2.1 GB)
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/020Atxt_R2.fastq.gz (2.1 GB)
+  species: Scaptomyza varipicta
+  ncbi_id: 938077
+  itis_id: 146680
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+040C [2021-06-09 18:51:03]
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/040Ctxt_R1.fastq.gz (2.2 GB)
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/040Ctxt_R2.fastq.gz (2.3 GB)
+  species: Drosophila mimica
+  ncbi_id: 7270
+  itis_id: 146509
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+088B [2021-06-09 18:51:12]
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/088B_R1.fastq.gz (1.9 GB)
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/088B_R2.fastq.gz (2.0 GB)
+  species: Scaptomyza cyrtandrae
+  ncbi_id: 504600
+  itis_id: 146618
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+CFB [2021-06-09 18:51:16]
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/CFB_R1.fastq.gz (1.9 GB)
+/n/extavour_lab/Lab/shchurch/combined_sequence_files_May2021/CFB_R2.fastq.gz (1.8 GB)
+  species: Scaptomyza varia
+  ncbi_id: 1334225
+  itis_id: 146764
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+Dmel [2021-06-14 17:10:09]
+/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/filtered_sequence_files/dmel-filtered-transcript-r6.29.fasta (36.5 MB)
+  species: Drosophila melanogaster
+  ncbi_id: 7227
+  itis_id: 146290
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+Dvir [2021-06-14 17:10:30]
+/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/filtered_sequence_files/dvir-filtered-transcript-r1.07.fasta (32.0 MB)
+  species: Drosophila virilis
+  ncbi_id: 7244
+  itis_id: 146372
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+Dgri [2021-06-14 17:10:33]
+/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/filtered_sequence_files/dgri-filtered-transcript-r1.05.fasta (31.6 MB)
+  species: Drosophila grimshawi
+  ncbi_id: 7222
+  itis_id: 146469
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+Dwil [2021-06-14 17:10:37]
+/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/filtered_sequence_files/dwil-filtered-transcript-r1.05.fasta (27.7 MB)
+  species: Drosophila willistoni
+  ncbi_id: 7260
+  itis_id: 146374
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+Dmoj [2021-06-14 17:10:40]
+/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/filtered_sequence_files/dmoj-filtered-transcript-r1.04.fasta (31.0 MB)
+  species: Drosophila mojavensis
+  ncbi_id: 7230
+  itis_id: 146298
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+Dpse [2021-06-14 17:10:43]
+/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/filtered_sequence_files/dpse-filtered-transcript-r3.04.fasta (34.8 MB)
+  species: Drosophila pseudoobscura
+  ncbi_id: 7237
+  itis_id: 146332
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+Dana [2021-06-14 17:10:46]
+/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/filtered_sequence_files/dana-filtered-transcript-r1.06.fasta (33.1 MB)
+  species: Drosophila ananassae
+  ncbi_id: 7217
+  itis_id: 146217
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+Dmur [2021-06-14 17:10:57]
+/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/filtered_sequence_files/D.murphyi.single_copy_busco.fa (6.6 MB)
+  species: Drosophila murphyi
+  ncbi_id: 48335
+  itis_id: 146212
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+Spal [2021-06-14 17:11:05]
+/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/filtered_sequence_files/S.pallida.single_copy_busco.fa (2.8 MB)
+  species: Scaptomyza pallida
+  ncbi_id: 7300
+  itis_id: 146638
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+Shsu [2021-06-14 17:11:08]
+/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/filtered_sequence_files/S.hsui.single_copy_busco.fa (6.5 MB)
+  species: Scaptomyza hsui
+  ncbi_id: 1334208
+  itis_id: 146631
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+Sgra [2021-06-14 17:11:12]
+/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/filtered_sequence_files/S.graminum.single_copy_busco.fa (6.6 MB)
+  species: Scaptomyza graminum
+  ncbi_id: 106258
+  itis_id: 146627
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+Smon [2021-06-14 17:11:15]
+/n/holyscratch01/extavour_lab/shchurch/assembly_phylogeny_expression_Hawaiian_Drosophila_June2021/filtered_sequence_files/S.montana.single_copy_busco.fa (6.5 MB)
+  species: Scaptomyza montana
+  ncbi_id: 1740953
+  itis_id: 146635
+  extraction_id: None
+  library_id: None
+  library_type: None
+  individual: None
+  treatment: None
+  sequencer: None
+  seq_center: None
+  note: None
+  sample_prep: None
+002Cb [2021-06-20 00:19:29]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_002Cb_R1.fastq.gz (672.6 MB)
+  species: Drosophila nanella
+  ncbi_id: 937302
+  itis_id: 146517
+  extraction_id: 2017-03-04
+  library_id: 002Cb
+  library_type: None
+  individual: 002C
+  treatment: carcass
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+002Cn [2021-06-20 00:19:44]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_002Cn_R1.fastq.gz (804.4 MB)
+  species: Drosophila nanella
+  ncbi_id: 937302
+  itis_id: 146517
+  extraction_id: 2017-03-04
+  library_id: 002Cn
+  library_type: None
+  individual: 002C
+  treatment: head
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+002Co [2021-06-20 00:19:47]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_002Co_R1.fastq.gz (843.0 MB)
+  species: Drosophila nanella
+  ncbi_id: 937302
+  itis_id: 146517
+  extraction_id: 2017-03-04
+  library_id: 002Co
+  library_type: None
+  individual: 002C
+  treatment: ovary
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+008Ab [2021-06-20 00:19:50]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_008Ab_R1.fastq.gz (858.1 MB)
+  species: Drosophila primaeva
+  ncbi_id: 46814
+  itis_id: 146212
+  extraction_id: 2017-03-24
+  library_id: 008Ab
+  library_type: None
+  individual: 008A
+  treatment: carcass
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+008An [2021-06-20 00:19:54]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_008An_R1.fastq.gz (513.1 MB)
+  species: Drosophila primaeva
+  ncbi_id: 46814
+  itis_id: 146212
+  extraction_id: 2017-03-24
+  library_id: 008An
+  library_type: None
+  individual: 008A
+  treatment: head
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+008Ao [2021-06-20 00:19:57]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_008Ao_R1.fastq.gz (432.0 MB)
+  species: Drosophila primaeva
+  ncbi_id: 46814
+  itis_id: 146212
+  extraction_id: 2017-03-24
+  library_id: 008Ao
+  library_type: None
+  individual: 008A
+  treatment: ovary
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+012Ab [2021-06-20 00:20:00]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_012Ab_R1.fastq.gz (659.1 MB)
+  species: Drosophila primaeva
+  ncbi_id: 46814
+  itis_id: 146212
+  extraction_id: 2017-03-24
+  library_id: 012Ab
+  library_type: None
+  individual: 012A
+  treatment: carcass
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+012An [2021-06-20 00:20:03]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_012An_R1.fastq.gz (539.9 MB)
+  species: Drosophila primaeva
+  ncbi_id: 46814
+  itis_id: 146212
+  extraction_id: 2017-03-24
+  library_id: 012An
+  library_type: None
+  individual: 012A
+  treatment: head
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+012Ao [2021-06-20 00:20:12]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_012Ao_R1.fastq.gz (628.1 MB)
+  species: Drosophila primaeva
+  ncbi_id: 46814
+  itis_id: 146212
+  extraction_id: 2017-03-24
+  library_id: 012Ao
+  library_type: None
+  individual: 012A
+  treatment: ovary
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+016Bb [2021-06-20 00:20:15]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_016Bb_R1.fastq.gz (499.1 MB)
+  species: Drosophila picticornis
+  ncbi_id: 7235
+  itis_id: 146538
+  extraction_id: 2017-03-24
+  library_id: 016Bb
+  library_type: None
+  individual: 016B
+  treatment: carcass
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+016Bn [2021-06-20 00:20:19]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_016Bn_R1.fastq.gz (514.2 MB)
+  species: Drosophila picticornis
+  ncbi_id: 7235
+  itis_id: 146538
+  extraction_id: 2017-03-24
+  library_id: 016Bn
+  library_type: None
+  individual: 016B
+  treatment: head
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+016Bo [2021-06-20 00:20:22]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_016Bo_R1.fastq.gz (354.0 MB)
+  species: Drosophila picticornis
+  ncbi_id: 7235
+  itis_id: 146538
+  extraction_id: 2017-03-24
+  library_id: 016Bo
+  library_type: None
+  individual: 016B
+  treatment: ovary
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+016Cb [2021-06-20 00:20:26]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_016Cb_R1.fastq.gz (767.3 MB)
+  species: Drosophila picticornis
+  ncbi_id: 7235
+  itis_id: 146538
+  extraction_id: 2017-03-24
+  library_id: 016Cb
+  library_type: None
+  individual: 016C
+  treatment: carcass
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+016Cn [2021-06-20 00:20:31]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_016Cn_R1.fastq.gz (895.8 MB)
+  species: Drosophila picticornis
+  ncbi_id: 7235
+  itis_id: 146538
+  extraction_id: 2017-03-24
+  library_id: 016Cn
+  library_type: None
+  individual: 016C
+  treatment: head
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+016Co [2021-06-20 00:20:34]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_016Co_R1.fastq.gz (814.0 MB)
+  species: Drosophila picticornis
+  ncbi_id: 7235
+  itis_id: 146538
+  extraction_id: 2017-03-24
+  library_id: 016Co
+  library_type: None
+  individual: 016C
+  treatment: ovary
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+020Bb [2021-06-20 00:20:38]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_020Bb_R1.fastq.gz (363.9 MB)
+  species: Scaptomyza varipicta
+  ncbi_id: 938077
+  itis_id: 146680
+  extraction_id: 2017-03-21
+  library_id: 020Bb
+  library_type: None
+  individual: 020B
+  treatment: carcass
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+020Bn [2021-06-20 00:20:41]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_020Bn_R1.fastq.gz (637.5 MB)
+  species: Scaptomyza varipicta
+  ncbi_id: 938077
+  itis_id: 146680
+  extraction_id: 2017-03-21
+  library_id: 020Bn
+  library_type: None
+  individual: 020B
+  treatment: head
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+020Bo [2021-06-20 00:20:44]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_020Bo_R1.fastq.gz (348.9 MB)
+  species: Scaptomyza varipicta
+  ncbi_id: 938077
+  itis_id: 146680
+  extraction_id: 2017-03-21
+  library_id: 020Bo
+  library_type: None
+  individual: 020B
+  treatment: ovary
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+020Cb [2021-06-20 00:20:48]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_020Cb_R1.fastq.gz (732.2 MB)
+  species: Scaptomyza varipicta
+  ncbi_id: 938077
+  itis_id: 146680
+  extraction_id: 2017-03-21
+  library_id: 020Cb
+  library_type: None
+  individual: 020C
+  treatment: carcass
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+020Cn [2021-06-20 00:20:53]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_020Cn_R1.fastq.gz (605.9 MB)
+  species: Scaptomyza varipicta
+  ncbi_id: 938077
+  itis_id: 146680
+  extraction_id: 2017-03-21
+  library_id: 020Cn
+  library_type: None
+  individual: 020C
+  treatment: head
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+020Co [2021-06-20 00:20:56]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_020Co_R1.fastq.gz (767.2 MB)
+  species: Scaptomyza varipicta
+  ncbi_id: 938077
+  itis_id: 146680
+  extraction_id: 2017-03-21
+  library_id: 020Co
+  library_type: None
+  individual: 020C
+  treatment: ovary
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+020Db [2021-06-20 00:21:00]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_020Db_R1.fastq.gz (813.9 MB)
+  species: Scaptomyza varipicta
+  ncbi_id: 938077
+  itis_id: 146680
+  extraction_id: 2017-03-21
+  library_id: 020Db
+  library_type: None
+  individual: 020D
+  treatment: carcass
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+020Dn [2021-06-20 00:21:03]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_020Dn_R1.fastq.gz (827.7 MB)
+  species: Scaptomyza varipicta
+  ncbi_id: 938077
+  itis_id: 146680
+  extraction_id: 2017-03-21
+  library_id: 020Dn
+  library_type: None
+  individual: 020D
+  treatment: head
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+020Do [2021-06-20 00:21:06]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_020Do_R1.fastq.gz (583.3 MB)
+  species: Scaptomyza varipicta
+  ncbi_id: 938077
+  itis_id: 146680
+  extraction_id: 2017-03-21
+  library_id: 020Do
+  library_type: None
+  individual: 020D
+  treatment: ovary
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+021Ab [2021-06-20 00:21:09]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_021Ab_R1.fastq.gz (627.6 MB)
+  species: Drosophila atroscutellata
+  ncbi_id: 937262
+  itis_id: 146212
+  extraction_id: 2017-03-23
+  library_id: 021Ab
+  library_type: None
+  individual: 021A
+  treatment: carcass
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+021An [2021-06-20 00:21:13]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_021An_R1.fastq.gz (614.0 MB)
+  species: Drosophila atroscutellata
+  ncbi_id: 937262
+  itis_id: 146212
+  extraction_id: 2017-03-23
+  library_id: 021An
+  library_type: None
+  individual: 021A
+  treatment: head
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+021Ao [2021-06-20 00:21:16]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_021Ao_R1.fastq.gz (744.6 MB)
+  species: Drosophila atroscutellata
+  ncbi_id: 937262
+  itis_id: 146212
+  extraction_id: 2017-03-23
+  library_id: 021Ao
+  library_type: None
+  individual: 021A
+  treatment: ovary
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+024Bb [2021-06-20 00:21:19]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_024Bb_R1.fastq.gz (820.2 MB)
+  species: Drosophila primaeva
+  ncbi_id: 46814
+  itis_id: 146212
+  extraction_id: 2017-03-24
+  library_id: 024Bb
+  library_type: None
+  individual: 024B
+  treatment: carcass
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+024Bn [2021-06-20 00:21:26]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_024Bn_R1.fastq.gz (583.3 MB)
+  species: Drosophila primaeva
+  ncbi_id: 46814
+  itis_id: 146212
+  extraction_id: 2017-03-24
+  library_id: 024Bn
+  library_type: None
+  individual: 024B
+  treatment: head
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+024Bo [2021-06-20 00:21:31]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_024Bo_R1.fastq.gz (532.1 MB)
+  species: Drosophila primaeva
+  ncbi_id: 46814
+  itis_id: 146212
+  extraction_id: 2017-03-24
+  library_id: 024Bo
+  library_type: None
+  individual: 024B
+  treatment: ovary
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+028Ab [2021-06-20 00:21:35]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_028Ab_R1.fastq.gz (710.6 MB)
+  species: Drosophila picticornis
+  ncbi_id: 7235
+  itis_id: 146538
+  extraction_id: 2017-03-24
+  library_id: 028Ab
+  library_type: None
+  individual: 028A
+  treatment: carcass
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+028An [2021-06-20 00:21:38]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_028An_R1.fastq.gz (646.0 MB)
+  species: Drosophila picticornis
+  ncbi_id: 7235
+  itis_id: 146538
+  extraction_id: 2017-03-24
+  library_id: 028An
+  library_type: None
+  individual: 028A
+  treatment: head
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+028Ao [2021-06-20 00:21:41]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_028Ao_R1.fastq.gz (1.0 GB)
+  species: Drosophila picticornis
+  ncbi_id: 7235
+  itis_id: 146538
+  extraction_id: 2017-03-24
+  library_id: 028Ao
+  library_type: None
+  individual: 028A
+  treatment: ovary
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+029Db [2021-06-20 00:21:45]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_029Db_R1.fastq.gz (562.0 MB)
+  species: Drosophila atroscutellata
+  ncbi_id: 937262
+  itis_id: 146212
+  extraction_id: 2017-03-23
+  library_id: 029Db
+  library_type: None
+  individual: 029D
+  treatment: carcass
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+029Dn [2021-06-20 00:21:48]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_029Dn_R1.fastq.gz (781.5 MB)
+  species: Drosophila atroscutellata
+  ncbi_id: 937262
+  itis_id: 146212
+  extraction_id: 2017-03-23
+  library_id: 029Dn
+  library_type: None
+  individual: 029D
+  treatment: head
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+029Do [2021-06-20 00:21:51]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_029Do_R1.fastq.gz (869.5 MB)
+  species: Drosophila atroscutellata
+  ncbi_id: 937262
+  itis_id: 146212
+  extraction_id: 2017-03-23
+  library_id: 029Do
+  library_type: None
+  individual: 029D
+  treatment: ovary
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+032Ab [2021-06-20 00:21:55]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_032Ab_R1.fastq.gz (747.5 MB)
+  species: Drosophila nanella
+  ncbi_id: 937302
+  itis_id: 146517
+  extraction_id: 2017-03-04
+  library_id: 032Ab
+  library_type: None
+  individual: 032A
+  treatment: carcass
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+032An [2021-06-20 00:21:58]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_032An_R1.fastq.gz (674.0 MB)
+  species: Drosophila nanella
+  ncbi_id: 937302
+  itis_id: 146517
+  extraction_id: 2017-03-04
+  library_id: 032An
+  library_type: None
+  individual: 032A
+  treatment: head
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+032Ao [2021-06-20 00:22:01]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_032Ao_R1.fastq.gz (1.1 GB)
+  species: Drosophila nanella
+  ncbi_id: 937302
+  itis_id: 146517
+  extraction_id: 2017-03-04
+  library_id: 032Ao
+  library_type: None
+  individual: 032A
+  treatment: ovary
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+032Bb [2021-06-20 00:22:06]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_032Bb_R1.fastq.gz (563.8 MB)
+  species: Drosophila nanella
+  ncbi_id: 937302
+  itis_id: 146517
+  extraction_id: 2017-03-04
+  library_id: 032Bb
+  library_type: None
+  individual: 032B
+  treatment: carcass
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+032Bn [2021-06-20 00:22:10]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_032Bn_R1.fastq.gz (338.1 MB)
+  species: Drosophila nanella
+  ncbi_id: 937302
+  itis_id: 146517
+  extraction_id: 2017-03-04
+  library_id: 032Bn
+  library_type: None
+  individual: 032B
+  treatment: head
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+032Bo [2021-06-20 00:22:13]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_032Bo_R1.fastq.gz (445.0 MB)
+  species: Drosophila nanella
+  ncbi_id: 937302
+  itis_id: 146517
+  extraction_id: 2017-03-04
+  library_id: 032Bo
+  library_type: None
+  individual: 032B
+  treatment: ovary
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+040Bb [2021-06-20 00:22:16]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_040Bb_R1.fastq.gz (560.9 MB)
+  species: Drosophila mimica
+  ncbi_id: 7270
+  itis_id: 146509
+  extraction_id: 2017-02-11
+  library_id: 040Bb
+  library_type: None
+  individual: 040B
+  treatment: carcass
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+040Bn [2021-06-20 00:22:19]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_040Bn_R1.fastq.gz (541.7 MB)
+  species: Drosophila mimica
+  ncbi_id: 7270
+  itis_id: 146509
+  extraction_id: 2017-02-11
+  library_id: 040Bn
+  library_type: None
+  individual: 040B
+  treatment: head
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+040Bo [2021-06-20 00:22:23]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_040Bo_R1.fastq.gz (638.9 MB)
+  species: Drosophila mimica
+  ncbi_id: 7270
+  itis_id: 146509
+  extraction_id: 2017-02-11
+  library_id: 040Bo
+  library_type: None
+  individual: 040B
+  treatment: ovary
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+043Cb [2021-06-20 00:22:26]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_043Cb_R1.fastq.gz (467.4 MB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: 2017-01-24
+  library_id: 043Cb
+  library_type: None
+  individual: 043C
+  treatment: carcass
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+043Cn [2021-06-20 00:22:31]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_043Cn_R1.fastq.gz (419.2 MB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: 2017-01-24
+  library_id: 043Cn
+  library_type: None
+  individual: 043C
+  treatment: head
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+043Co [2021-06-20 00:22:35]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_043Co_R1.fastq.gz (592.3 MB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: 2017-01-24
+  library_id: 043Co
+  library_type: None
+  individual: 043C
+  treatment: ovary
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+040Db [2021-06-20 00:22:38]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_040Db_R1.fastq.gz (873.1 MB)
+  species: Drosophila mimica
+  ncbi_id: 7270
+  itis_id: 146509
+  extraction_id: 2017-02-11
+  library_id: 040Db
+  library_type: None
+  individual: 040D
+  treatment: carcass
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+040Dn [2021-06-20 00:22:45]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_040Dn_R1.fastq.gz (547.4 MB)
+  species: Drosophila mimica
+  ncbi_id: 7270
+  itis_id: 146509
+  extraction_id: 2017-02-11
+  library_id: 040Dn
+  library_type: None
+  individual: 040D
+  treatment: head
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+040Do [2021-06-20 00:22:49]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_040Do_R1.fastq.gz (748.2 MB)
+  species: Drosophila mimica
+  ncbi_id: 7270
+  itis_id: 146509
+  extraction_id: 2017-02-11
+  library_id: 040Do
+  library_type: None
+  individual: 040D
+  treatment: ovary
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+056Ab [2021-06-20 00:22:52]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_056Ab_R1.fastq.gz (916.3 MB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: 2017-01-24
+  library_id: 056Ab
+  library_type: None
+  individual: 056A
+  treatment: carcass
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+056An [2021-06-20 00:22:55]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_056An_R1.fastq.gz (604.8 MB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: 2017-01-24
+  library_id: 056An
+  library_type: None
+  individual: 056A
+  treatment: head
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+056Ao [2021-06-20 00:22:58]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_056Ao_R1.fastq.gz (775.2 MB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: 2017-01-24
+  library_id: 056Ao
+  library_type: None
+  individual: 056A
+  treatment: ovary
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+088Ab [2021-06-20 00:23:02]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_088Ab_R1.fastq.gz (813.8 MB)
+  species: Scaptomyza cyrtandrae
+  ncbi_id: 504600
+  itis_id: 146618
+  extraction_id: 2017-03-21
+  library_id: 088Ab
+  library_type: None
+  individual: 088A
+  treatment: carcass
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+088An [2021-06-20 00:23:05]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_088An_R1.fastq.gz (529.6 MB)
+  species: Scaptomyza cyrtandrae
+  ncbi_id: 504600
+  itis_id: 146618
+  extraction_id: 2017-03-21
+  library_id: 088An
+  library_type: None
+  individual: 088A
+  treatment: head
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+088Ao [2021-06-20 00:23:08]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_088Ao_R1.fastq.gz (595.7 MB)
+  species: Scaptomyza cyrtandrae
+  ncbi_id: 504600
+  itis_id: 146618
+  extraction_id: 2017-03-21
+  library_id: 088Ao
+  library_type: None
+  individual: 088A
+  treatment: ovary
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+088Bb [2021-06-20 00:23:11]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_088Bb_R1.fastq.gz (507.6 MB)
+  species: Scaptomyza cyrtandrae
+  ncbi_id: 504600
+  itis_id: 146618
+  extraction_id: 2017-03-21
+  library_id: 088Bb
+  library_type: None
+  individual: 088B
+  treatment: carcass
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+088Bn [2021-06-20 00:23:14]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_088Bn_R1.fastq.gz (557.6 MB)
+  species: Scaptomyza cyrtandrae
+  ncbi_id: 504600
+  itis_id: 146618
+  extraction_id: 2017-03-21
+  library_id: 088Bn
+  library_type: None
+  individual: 088B
+  treatment: head
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+088Bo [2021-06-20 00:24:22]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_088Bo_R1.fastq.gz (512.0 MB)
+  species: Scaptomyza cyrtandrae
+  ncbi_id: 504600
+  itis_id: 146618
+  extraction_id: 2017-03-21
+  library_id: 088Bo
+  library_type: None
+  individual: 088B
+  treatment: ovary
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+088Cb [2021-06-20 00:24:26]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_088Cb_R1.fastq.gz (648.7 MB)
+  species: Scaptomyza cyrtandrae
+  ncbi_id: 504600
+  itis_id: 146618
+  extraction_id: 2017-03-21
+  library_id: 088Cb
+  library_type: None
+  individual: 088C
+  treatment: carcass
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+088Cn [2021-06-20 00:24:29]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_088Cn_R1.fastq.gz (346.4 MB)
+  species: Scaptomyza cyrtandrae
+  ncbi_id: 504600
+  itis_id: 146618
+  extraction_id: 2017-03-21
+  library_id: 088Cn
+  library_type: None
+  individual: 088C
+  treatment: head
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+088Co [2021-06-20 00:24:33]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_088Co_R1.fastq.gz (295.9 MB)
+  species: Scaptomyza cyrtandrae
+  ncbi_id: 504600
+  itis_id: 146618
+  extraction_id: 2017-03-21
+  library_id: 088Co
+  library_type: None
+  individual: 088C
+  treatment: ovary
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+106Bb [2021-06-20 00:24:38]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_106Bb_R1.fastq.gz (740.2 MB)
+  species: Drosophila sproati
+  ncbi_id: 7289
+  itis_id: 146212
+  extraction_id: 2017-03-23
+  library_id: 106Bb
+  library_type: None
+  individual: 106B
+  treatment: carcass
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+106Bn [2021-06-20 00:24:41]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_106Bn_R1.fastq.gz (439.1 MB)
+  species: Drosophila sproati
+  ncbi_id: 7289
+  itis_id: 146212
+  extraction_id: 2017-03-23
+  library_id: 106Bn
+  library_type: None
+  individual: 106B
+  treatment: head
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+106Bo [2021-06-20 00:24:45]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_106Bo_R1.fastq.gz (672.8 MB)
+  species: Drosophila sproati
+  ncbi_id: 7289
+  itis_id: 146212
+  extraction_id: 2017-03-23
+  library_id: 106Bo
+  library_type: None
+  individual: 106B
+  treatment: ovary
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+18_0_14 [2021-06-20 00:24:48]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_18_0_14_R1.fastq.gz (783.0 MB)
+  species: Drosophila mimica
+  ncbi_id: 7270
+  itis_id: 146509
+  extraction_id: 2016-11-15
+  library_id: 18_0_14
+  library_type: None
+  individual: 18_0_3
+  treatment: ovary
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+18_0_14_resequence1 [2021-06-20 00:24:51]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_18_0_14_R1.fastq.gz (616.4 MB)
+  species: Drosophila mimica
+  ncbi_id: 7270
+  itis_id: 146509
+  extraction_id: 2016-11-15
+  library_id: 18_0_14_resequence1
+  library_type: None
+  individual: 18_0_3
+  treatment: ovary
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+18_0_17 [2021-06-20 00:25:05]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_18_0_17_R1.fastq.gz (862.5 MB)
+  species: Drosophila mimica
+  ncbi_id: 7270
+  itis_id: 146509
+  extraction_id: 2016-11-15
+  library_id: 18_0_17
+  library_type: None
+  individual: 18_0_3
+  treatment: carcass
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+18_0_17_resequence1 [2021-06-20 00:25:09]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_18_0_17_R1.fastq.gz (530.0 MB)
+  species: Drosophila mimica
+  ncbi_id: 7270
+  itis_id: 146509
+  extraction_id: 2016-11-15
+  library_id: 18_0_17_resequence1
+  library_type: None
+  individual: 18_0_3
+  treatment: carcass
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+40_2_1 [2021-06-20 00:25:12]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_40_2_1_R1.fastq.gz (1.2 GB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: 2016-08-18
+  library_id: 40_2_1
+  library_type: None
+  individual: 40_2_1
+  treatment: ovary
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+40_2_2 [2021-06-20 00:25:16]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_40_2_2_R1.fastq.gz (1.2 GB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: 2016-08-18
+  library_id: 40_2_2
+  library_type: None
+  individual: 40_2_1
+  treatment: head
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+40_2_2_resequence1 [2021-06-20 00:25:19]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_40_2_2_R1.fastq.gz (791.4 MB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: 2016-08-18
+  library_id: 40_2_2_resequence1
+  library_type: None
+  individual: 40_2_1
+  treatment: head
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+40_2_2_resequence2 [2021-06-20 00:25:22]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_40_2_2_R1.fastq.gz (787.8 MB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: 2016-08-18
+  library_id: 40_2_2_resequence2
+  library_type: None
+  individual: 40_2_1
+  treatment: head
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+40_2_4 [2021-06-20 00:25:26]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_40_2_4_R1.fastq.gz (803.9 MB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: 2016-08-18
+  library_id: 40_2_4
+  library_type: None
+  individual: 40_2_1
+  treatment: carcass
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+40_2_4_resequence1 [2021-06-20 00:25:29]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_40_2_4_R1.fastq.gz (683.9 MB)
+  species: Drosophila tanythrix
+  ncbi_id: 46827
+  itis_id: 146774
+  extraction_id: 2016-08-18
+  library_id: 40_2_4_resequence1
+  library_type: None
+  individual: 40_2_1
+  treatment: carcass
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+7_1_1 [2021-06-20 00:25:32]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_7_1_1_R1.fastq.gz (497.6 MB)
+  species: Drosophila sproati
+  ncbi_id: 7289
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 7_1_1
+  library_type: None
+  individual: 7_1_1
+  treatment: ovary
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+7_1_4 [2021-06-20 00:25:36]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_7_1_4_R1.fastq.gz (1.0 GB)
+  species: Drosophila sproati
+  ncbi_id: 7289
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 7_1_4
+  library_type: None
+  individual: 7_1_1
+  treatment: carcass
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+7_2_1 [2021-06-20 00:25:41]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_7_2_1_R1.fastq.gz (766.6 MB)
+  species: Drosophila sproati
+  ncbi_id: 7289
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 7_2_1
+  library_type: None
+  individual: 7_2_1
+  treatment: carcass
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+7_2_2 [2021-06-20 00:25:48]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_7_2_2_R1.fastq.gz (917.7 MB)
+  species: Drosophila sproati
+  ncbi_id: 7289
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 7_2_2
+  library_type: None
+  individual: 7_2_1
+  treatment: head
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+7_2_4 [2021-06-20 00:25:52]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_7_2_4_R1.fastq.gz (1.2 GB)
+  species: Drosophila sproati
+  ncbi_id: 7289
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 7_2_4
+  library_type: None
+  individual: 7_2_1
+  treatment: ovary
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+8_0_12 [2021-06-20 00:25:55]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_12_R1.fastq.gz (1.1 GB)
+  species: Drosophila macrothrix
+  ncbi_id: 46811
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 8_0_12
+  library_type: None
+  individual: 8_0_3
+  treatment: carcass
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+8_0_15 [2021-06-20 00:25:58]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_15_R1.fastq.gz (1.5 GB)
+  species: Drosophila macrothrix
+  ncbi_id: 46811
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 8_0_15
+  library_type: None
+  individual: 8_0_3
+  treatment: ovary
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+8_0_16 [2021-06-20 00:26:01]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_16_R1.fastq.gz (760.1 MB)
+  species: Drosophila macrothrix
+  ncbi_id: 46811
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 8_0_16
+  library_type: None
+  individual: 8_0_3
+  treatment: head
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+8_0_2 [2021-06-20 00:26:05]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_2_R1.fastq.gz (1.2 GB)
+  species: Drosophila macrothrix
+  ncbi_id: 46811
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 8_0_2
+  library_type: None
+  individual: 8_0_1
+  treatment: head
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+8_0_2_resequence1 [2021-06-20 00:26:08]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_8_0_2_R1.fastq.gz (567.0 MB)
+  species: Drosophila macrothrix
+  ncbi_id: 46811
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 8_0_2_resequence1
+  library_type: None
+  individual: 8_0_1
+  treatment: head
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+8_0_4 [2021-06-20 00:26:11]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_4_R1.fastq.gz (771.6 MB)
+  species: Drosophila macrothrix
+  ncbi_id: 46811
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 8_0_4
+  library_type: None
+  individual: 8_0_1
+  treatment: carcass
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+8_0_6 [2021-06-20 00:26:15]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_6_R1.fastq.gz (682.3 MB)
+  species: Drosophila macrothrix
+  ncbi_id: 46811
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 8_0_6
+  library_type: None
+  individual: 8_0_2
+  treatment: ovary
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+8_0_7 [2021-06-20 00:26:18]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_8_0_7_R1.fastq.gz (539.0 MB)
+  species: Drosophila macrothrix
+  ncbi_id: 46811
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 8_0_7
+  library_type: None
+  individual: 8_0_2
+  treatment: head
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+8_0_9 [2021-06-20 00:26:21]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_8_0_9_R1.fastq.gz (1.4 GB)
+  species: Drosophila macrothrix
+  ncbi_id: 46811
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 8_0_9
+  library_type: None
+  individual: 8_0_2
+  treatment: carcass
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+CFAb [2021-06-20 00:26:25]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_CFAb_R1.fastq.gz (614.5 MB)
+  species: Scaptomyza varia
+  ncbi_id: 1334225
+  itis_id: 146764
+  extraction_id: 2017-03-04
+  library_id: CFAb
+  library_type: None
+  individual: CFA
+  treatment: carcass
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+CFAn [2021-06-20 00:26:55]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_CFAn_R1.fastq.gz (451.9 MB)
+  species: Scaptomyza varia
+  ncbi_id: 1334225
+  itis_id: 146764
+  extraction_id: 2017-03-04
+  library_id: CFAn
+  library_type: None
+  individual: CFA
+  treatment: head
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+CFAo [2021-06-20 00:26:58]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_CFAo_R1.fastq.gz (468.8 MB)
+  species: Scaptomyza varia
+  ncbi_id: 1334225
+  itis_id: 146764
+  extraction_id: 2017-03-04
+  library_id: CFAo
+  library_type: None
+  individual: CFA
+  treatment: ovary
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+CFBb [2021-06-20 00:27:01]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_CFBb_R1.fastq.gz (355.6 MB)
+  species: Scaptomyza varia
+  ncbi_id: 1334225
+  itis_id: 146764
+  extraction_id: 2017-03-04
+  library_id: CFBb
+  library_type: None
+  individual: CFB
+  treatment: carcass
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+CFBn [2021-06-20 00:27:05]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_CFBn_R1.fastq.gz (319.4 MB)
+  species: Scaptomyza varia
+  ncbi_id: 1334225
+  itis_id: 146764
+  extraction_id: 2017-03-04
+  library_id: CFBn
+  library_type: None
+  individual: CFB
+  treatment: head
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+CFBo [2021-06-20 00:27:08]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NB502063_CFBo_R1.fastq.gz (554.0 MB)
+  species: Scaptomyza varia
+  ncbi_id: 1334225
+  itis_id: 146764
+  extraction_id: 2017-03-04
+  library_id: CFBo
+  library_type: None
+  individual: CFB
+  treatment: ovary
+  sequencer: 180724_NB502063
+  seq_center: None
+  note: None
+  sample_prep: None
+CFCb [2021-06-20 00:27:11]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_CFCb_R1.fastq.gz (468.4 MB)
+  species: Scaptomyza varia
+  ncbi_id: 1334225
+  itis_id: 146764
+  extraction_id: 2017-03-04
+  library_id: CFCb
+  library_type: None
+  individual: CFC
+  treatment: carcass
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+CFCn [2021-06-20 00:27:14]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_CFCn_R1.fastq.gz (481.2 MB)
+  species: Scaptomyza varia
+  ncbi_id: 1334225
+  itis_id: 146764
+  extraction_id: 2017-03-04
+  library_id: CFCn
+  library_type: None
+  individual: CFC
+  treatment: head
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+CFCo [2021-06-20 00:27:18]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180723_NB501677_CFCo_R1.fastq.gz (462.3 MB)
+  species: Scaptomyza varia
+  ncbi_id: 1334225
+  itis_id: 146764
+  extraction_id: 2017-03-04
+  library_id: CFCo
+  library_type: None
+  individual: CFC
+  treatment: ovary
+  sequencer: 180723_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+16_1_1 [2021-06-20 00:27:21]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_16_1_1_R1.fastq.gz (542.3 MB)
+  species: Drosophila cfdives
+  ncbi_id: None
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 16_1_1
+  library_type: None
+  individual: 16_1_1
+  treatment: ovary
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+16_1_2 [2021-06-20 00:27:24]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_16_1_2_R1.fastq.gz (815.7 MB)
+  species: Drosophila cfdives
+  ncbi_id: None
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 16_1_2
+  library_type: None
+  individual: 16_1_1
+  treatment: head
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+16_1_4 [2021-06-20 00:27:28]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_16_1_4_R1.fastq.gz (873.1 MB)
+  species: Drosophila cfdives
+  ncbi_id: None
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 16_1_4
+  library_type: None
+  individual: 16_1_1
+  treatment: carcass
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+16_2_1 [2021-06-20 00:27:31]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_16_2_1_R1.fastq.gz (720.0 MB)
+  species: Drosophila cfdives
+  ncbi_id: None
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 16_2_1
+  library_type: None
+  individual: 16_2_1
+  treatment: ovary
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+16_2_2 [2021-06-20 00:27:34]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/180724_NS500422_16_2_2_R1.fastq.gz (506.5 MB)
+  species: Drosophila cfdives
+  ncbi_id: None
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 16_2_2
+  library_type: None
+  individual: 16_2_1
+  treatment: head
+  sequencer: 180724_NS500422
+  seq_center: None
+  note: None
+  sample_prep: None
+16_2_4 [2021-06-20 00:27:37]
+/n/holyscratch01/extavour_lab/shchurch/Hawaiian_SRA_submission/170310_NB501677_16_2_4_R1.fastq.gz (591.5 MB)
+  species: Drosophila cfdives
+  ncbi_id: None
+  itis_id: 146212
+  extraction_id: 2016-11-15
+  library_id: 16_2_4
+  library_type: None
+  individual: 16_2_1
+  treatment: carcass
+  sequencer: 170310_NB501677
+  seq_center: None
+  note: None
+  sample_prep: None
+
