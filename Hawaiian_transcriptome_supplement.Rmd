@@ -4,7 +4,7 @@ author:
     - Samuel H. Church^1,2,^\* 
     - Catriona Munro^3^
     - Casey W. Dunn^2^
-    - Cassandra G. Extavour^1,4^
+    - Cassandra G. Extavour^1,4,5^
 output:
   bookdown::pdf_document2:
   keep_tex: yes
@@ -78,7 +78,7 @@ set.seed(84095)
 #    save(target_int_changes,file="analysis/results_Robjects/target_int_changes.RData")
 #    save(genetree_all_dmel_id,file="analysis/results_Robjects/genetree_all_dmel_id.RData")
 #    save(ovary_changes,file="analysis/results_Robjects/ovary_changes.RData")    
-#    save(a,file="analysis/results_Robjects/ovary_average_average_ratio.RData")      
+#    save(ave_ratio_summary,file="analysis/results_Robjects/ovary_average_ratio.RData")      
 #
 #    source("analysis/head_analyses/head_significance_and_flyatlas.R")
 #    source("analysis/head_analyses/head_tissues_and_species.R")
@@ -103,6 +103,7 @@ load(file="analysis/results_Robjects/core_parent_genes.RData")
 load(file="analysis/results_Robjects/head_parent_genes.RData")
 load(file="analysis/results_Robjects/genetree_all_dmel_id.RData")
 load(file="analysis/results_Robjects/ovary_changes.RData")
+load(file="analysis/results_Robjects/ovary_average_ratio.RData")
 
 collection_info <- read.delim("expression_methods_data/collection_information.tsv",stringsAsFactors=F,sep="\t",header=T,check.names=F)
 
@@ -132,6 +133,8 @@ Research in Biology, 75005 Paris, France
 
 ^4^ Department of Molecular and Cellular Biology, Harvard University, Cambridge, MA 02138, USA
 
+^5^ Howard Hughes Medical Institute, Chevy Chase, MD 20815
+
 \* corresponding author: samuelhchurch@gmail.com
 
 # Supplementary figures
@@ -139,7 +142,7 @@ Research in Biology, 75005 Paris, France
 ## Background
 
 
-```{r atlas-max,include=T,results=T,fig.cap="Comparing across female tissues in the  FlyAtlas2 dataset[@leader2018flyatlas], more genes show highest enrichment in the ovary than any other tissue."}
+```{r atlas-max,include=T,results=T,fig.cap="**Comparing across _Drosophila melanogaster_ female tissues in the  FlyAtlas2 dataset[@leader2018flyatlas], more genes show highest enrichment in the ovary than any other tissue.**"}
 flyatlas <- read.delim("analysis/data/120721_FlyAtlas2_sqldump.csv",sep=",",stringsAsFactors=F,header=T) %>% 
                 filter(type == "protein coding")
 flyatlas_f <- flyatlas %>% filter(stage == "Adult",sex == "Female") %>% # female only values
@@ -158,7 +161,7 @@ print(atlas_max)
 
 ## Analysis pipeline
 
-![(#fig:methods1) **Analysis pipeline for (A) identifying core ovary genes, (B) linear modeling of expression, and (C) estimating the species level phylogeny.**](figures_and_panels/Figure_methods1_V1-01.png)
+![(#fig:methods1) **Analysis pipeline for (A) identifying core ovary genes, (B) linear modeling of expression, and (C) estimating the species level phylogeny. Dmel = _Drosophila melanogster_. HI flies = Hawaiian Drosophilidae.**](figures_and_panels/Figure_methods1_V1-01.png)
 
 ![(#fig:methods2) **Analysis pipeline for (A) identifying evolutionary changes in expression bias, and (B) estimating correlation of expression evolution between genes.**](figures_and_panels/Figure_methods2_V1-01.png)
 
@@ -166,9 +169,9 @@ print(atlas_max)
 
 ![(#fig:PCA-grid) **Principal component analysis within species.** Species abbreviations correspond to names shown in Fig. 1B.](figures_and_panels/Figure_PCA_grid_V1-01.png){width=90%}
 
-![(#fig:volcanos) **Differential gene expression volcanos plot comparing ovary and carcass across species.** Species abbreviations correspond to names shown in Fig. 1B. Positive fold changes (points on the right hand side of the volcano) indicate higher expression in the ovary than carcass.](figures_and_panels/Figure_volcano_grid_V1-01.png){width=90%}
+![(#fig:volcanos) **Differential gene expression volcanos plot comparing ovary and carcass across species.** Species abbreviations correspond to names shown in Fig. 1B. Positive fold changes (points on the right hand side of the volcano) indicate higher expression in the ovary than in the carcass.](figures_and_panels/Figure_volcano_grid_V1-01.png){width=90%}
 
-![(#fig:head-volcanos) **Differential gene expression volcanos plot comparing head and carcass across species.** Species abbreviations correspond to names shown in Fig. 1B. Positive fold changes (points on the right hand side of the volcano) indicate higher expression in the ovary than carcass.](figures_and_panels/Figure_head_volcano_grid_V1-01.png){width=90%}
+![(#fig:head-volcanos) **Differential gene expression volcanos plot comparing head and carcass across species.** Species abbreviations correspond to names shown in Fig. 1B. Positive fold changes (points on the right hand side of the volcano) indicate higher expression in the head than in the carcass.](figures_and_panels/Figure_head_volcano_grid_V1-01.png){width=90%}
 
 ![(#fig:PCA-resequenced) **Principal component analysis showing resequenced libraries.** Species abbreviations correspond to names shown in Fig. 1B.](figures_and_panels/Figure_PCA_resequenced_V1-01.png)
 
@@ -176,7 +179,7 @@ print(atlas_max)
 
 ![(#fig:head-core-genes) **Differential gene expression analyses comparing head and carcass, colored by _D. melanogaster_ expression enrichment.** A, Core head genes, plotted by mean expression change across Hawaiian species to the maximum head, brain, or eye enrichment values from _D. melanogaster_, as reported in FlyAtlas2[@leader2018flyatlas]. Core genes are annotated with the gene symbol from _D. melanogaster_. B, Tissue-variable genes identified in a linear model analysis comparing head and carcass tissues, showing head-upregulated TVGs. Genes are annotated with the gene symbol from the _D. melanogaster_ sequences in the same homology group.](figures_and_panels/Figure_head_core_genes_V1-01.png)
 
-![(#fig:head-atlas-enrichment) **Differential gene expression analyses comparing head and carcass, colored by _D. melanogaster_ expression enrichment.** A, Points in cyan indicate transcripts that match _D. melanogaster_ genes that are not highly enriched in the ovary, according to FlyAtlas2[@leader2018flyatlas]. Orange are transcripts matching genes that are highly enriched in the ovary. Black are transcripts without a BLAST match in _D. melanogaster_. Gray are non-significantly differentially expressed transcripts. B, The same plot, with purple points as transcripts that are highly enriched in the head, brain, or eye of _D. melanogaster_.](figures_and_panels/Figure_head_atlas_enrichment_V1-01.png){width=100%}
+![(#fig:head-atlas-enrichment) **Differential gene expression analyses comparing head and carcass, colored by _D. melanogaster_ expression enrichment.** A, Points in cyan indicate transcripts that match _D. melanogaster_ genes that are not highly enriched in the head, according to FlyAtlas2[@leader2018flyatlas]. Orange are transcripts matching genes that are highly enriched in the head. Black are transcripts without a BLAST match in _D. melanogaster_. Gray are non-significantly differentially expressed transcripts. B, The same plot, with purple points as transcripts that are highly enriched in the head, brain, or eye of _D. melanogaster_.](figures_and_panels/Figure_head_atlas_enrichment_V1-01.png){width=100%}
 
 ## Linear modeling
 
@@ -184,7 +187,7 @@ print(atlas_max)
 
 ![(#fig:PCA-all) **Principal component analysis across species.** A, PCA using average expression across genes grouped by homology, as inferred with the agalma pipeline. B, PCA using average expression bias, calculated as an expression ratio, across genes grouped by homology. C, Phylogeny of species shown in A and B.](figures_and_panels/Figure_homolog_pca_V2-01.png)
 
-![(#fig:linear-scatter) **Linear model results by gene.** A, Results of a linear model analysis between genes, grouped by homology as inferred in the agalma pipeline, comparing two _picture-wing_ species, _D. macrothrix_ and _D. sproati_. Orange points are tissue variable genes (TVGs), cyan are species variable genes (SVGs), gray are neither. B, Results of the same analysis across all twelve Hawaiian drosophilid species studied here.](figures_and_panels/Figure_linear_model_scatterplot_V2-01.png)
+![(#fig:linear-scatter) **Linear model results by gene.** A, Results of a linear model analysis between genes, grouped by homology as inferred in the agalma pipeline, comparing two _picture-wing_ species, _D. macrothrix_ and _D. sproati_. Orange points are tissue-variable genes (TVGs), cyan are species-variable genes (SVGs), gray are neither. B, Results of the same analysis across all twelve Hawaiian drosophilid species studied here.](figures_and_panels/Figure_linear_model_scatterplot_V2-01.png)
 
 ![(#fig:head-linear-distance) **Proportion of variance across species and tissues, comparing head and carcass.** The mean proportion of variance across genes attributed to species and tissues, comparing the head and carcass across four clades. Clades correspond to those shown in Fig. 3A.](figures_and_panels/Figure_head_linear_model_distance_V1-01.png)
 
@@ -194,9 +197,9 @@ print(atlas_max)
 
 ## Phylogenetic analysis 
 
-![(#fig:head-bias-changes) **Changes in head-biased expression evolution.** Four genes corresponding with large swings in relative head expression, showing the average expression bias for each species colored according to more expression in the head (red) or carcass (blue). Panels are annotated with the gene symbol from the _D. melanogaster_ sequences in the same homology group, with the exception of _vilya_\*, which was annotated using a direct BLAST search since no _D. melanogaster_ sequence was present in that group.](figures_and_panels/Figure_head_bias_change_examples_V1-01.png){width=75%}
+![(#fig:head-bias-changes) **Changes in head-biased expression evolution.** Four genes displaying large swings in relative head expression, showing the expression bias for each transcript colored according to more expression in the head (red) or carcass (blue). Panels are annotated with the gene symbol from the _D. melanogaster_ sequences in the same homology group, with the exception of _vilya_\*, which was annotated using a direct BLAST search since no _D. melanogaster_ sequence was present in that group.](figures_and_panels/Figure_head_bias_change_examples_V1-01.png){width=75%}
 
-![(#fig:head-correlations) **Evolutionary correlations based on head-biased expression evolution.** A-B Comparison of the dsitribution of Pearson's correlation coefficients based on ovary-biased expression evolution between genes. Asterisks indicate a significant t-test comparison. A, Genes with no or unknown protein-protein interactions compared to those with reported interactions in FlyBase[@larkin2021flybase]  (p-value=`r round(max(head_t_test_results[[1]]),3)`). B, Correlation comparison between genes with no or uknown genetic interactions and those reported to have enhancement or suppression interactions in FlyBase (unknown vs. enhancemenet p-value=`r gsub("0","<0.001",round(max(head_t_test_results[[2]]),3))`; unknown vs. suppression=`r gsub("0","<0.001",round(max(head_t_test_results[[3]]),3))`; enhancement vs. suppression=`r round(head_t_test_results[[4]]$p.value,3)`). C, The network of strong correlation partners (absolute correlation > `r parameters[[3]]`) with the yolk-protein genes, colored by the direction of correlation. Stronger correlations are shown by brighter colors, and thicker, shorter lines. Nodes are annotated with the gene symbols from the _D. melanogaster_ sequences from that homology group.](figures_and_panels/Figure_head_correlations_V2-01.png)
+![(#fig:head-correlations) **Evolutionary correlations based on head-biased expression evolution.** A-B Comparison of the dsitribution of Pearson's correlation coefficients based on head-biased expression evolution between genes. Asterisks indicate a significant t-test comparison. A, Genes with no or unknown protein-protein interactions compared to those with reported interactions in FlyBase[@larkin2021flybase]  (p-value=`r round(max(head_t_test_results[[1]]),3)`). B, Correlation comparison between genes with no or uknown genetic interactions and those reported to have enhancement or suppression interactions in FlyBase (unknown vs. enhancemenet p-value=`r gsub("0","<0.001",round(max(head_t_test_results[[2]]),3))`; unknown vs. suppression=`r gsub("0","<0.001",round(max(head_t_test_results[[3]]),3))`; enhancement vs. suppression=`r round(head_t_test_results[[4]]$p.value,3)`). C, The network of strong correlation partners (absolute correlation > `r parameters[[3]]`) with the yolk-protein genes, colored by the direction of correlation. Stronger correlations are shown by brighter colors, and thicker, shorter lines. Nodes are annotated with the gene symbols from the _D. melanogaster_ sequences from that homology group.](figures_and_panels/Figure_head_correlations_V2-01.png)
 
 # Data files
 
@@ -236,7 +239,7 @@ knitr::kable(barcode_info,
      kableExtra::kable_styling(font_size = 6) 
 ```
 
-```{r paired-reads-info,include=T,results=T,fig.cap="Sequencing read counts. For _D. sproati_, tissues were dissected and RNA was extracted separately from each, with RNA combined prior to library preparation. For _S. varia_, _S. cyrtandrae_ and _D._ cf _dives_, tissues were dissected, RNA was extracted, libraries prepared and sequenced separately, and raw reads were combined after sequencing."}
+```{r paired-reads-info,include=T,results=T}
 reads_info <- read.delim("expression_methods_data/paired_end_reads_information.tsv",stringsAsFactors=F,sep="\t",header=T,check.names=F)
 
 knitr::kable(reads_info,
@@ -250,7 +253,7 @@ knitr::kable(reads_info,
     kableExtra::kable_styling(font_size = 6) 
 ```
 
-```{r single-reads-info,include=T,results=T,fig.cap="Sequencing read counts. For _D. sproati_, tissues were dissected and RNA was extracted separately from each, with RNA combined prior to library preparation. For _S. varia_, _S. cyrtandrae_ and _D._ cf _dives_, tissues were dissected, RNA was extracted, libraries prepared and sequenced separately, and raw reads were combined after sequencing."}
+```{r single-reads-info,include=T,results=T}
 reads_info <- read.delim("expression_methods_data/single_end_reads_information.tsv",stringsAsFactors=F,sep="\t",header=T,check.names=F)
 
 knitr::kable(reads_info,
@@ -258,6 +261,30 @@ knitr::kable(reads_info,
        caption="Single-end sequencing read counts.", booktabs = T, longtable = TRUE, linesep = "") %>% 
     kableExtra::column_spec(c(1),italic=T) %>% 
     kableExtra::column_spec(c(2,3,4,5,6,7,8,9,10),width="4.5em") %>%
+    kableExtra::kable_styling(latex_options = "striped") %>%
+    kableExtra::kable_styling(latex_options = "HOLD_position") %>% 
+    kableExtra::kable_styling(latex_options = "repeat_header")  %>%
+    kableExtra::kable_styling(font_size = 6) 
+```
+
+```{r genetree-stats-table,include=T,results=T}
+genetree_table <- ave_ratio_summary %>% select(-sp_code) %>%
+    group_by(species,genetree) %>% tally() %>% 
+    mutate(species = gsub("cf","cf ",species)) %>% 
+    mutate(species = gsub("Drosophila","D.",species)) %>% 
+    mutate(species = gsub("Scaptomyza","S. ",species)) %>% 
+    mutate(species = gsub("_","  ",species)) %>% 
+    group_by(species) %>% summarize("homology groups" = n(),
+        "groups with more than one transcript" = count(n>1),
+        "max num. transcripts per group" = max(n),
+        "ave num. transcripts per group" = round(mean(n),2)) %>% 
+    arrange(species)
+
+knitr::kable(genetree_table,
+      align=c('lrrrr'),
+       caption="Number of transcripts per homology group per species.", booktabs = T, longtable = TRUE, linesep = "", format.args = list(big.mark = ",")) %>% 
+    kableExtra::column_spec(c(1),italic=T) %>% 
+    kableExtra::column_spec(c(2,3,4,5),width="7em") %>%
     kableExtra::kable_styling(latex_options = "striped") %>%
     kableExtra::kable_styling(latex_options = "HOLD_position") %>% 
     kableExtra::kable_styling(latex_options = "repeat_header")  %>%

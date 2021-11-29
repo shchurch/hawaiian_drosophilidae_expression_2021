@@ -12,6 +12,17 @@ ave_ave_ratio <- expression_genetree %>%
 	group_by(key,individual,id,species,treatment) %>% summarize(mean_val = mean(ratio)) %>% ungroup() %>% 
 	group_by(key,id,species,treatment) %>% summarize(val = mean(mean_val)) %>% ungroup()
 
+ave_ratio <- expression_genetree %>% 
+	filter(!(library_id %in% resequenced_ids)) %>% select(-library_id) %>% 
+	filter(!is.na(expression)) %>% # remove missing data
+	mutate(expression = expression + pseudocount) %>% 
+	pivot_wider(names_from = treatment,values_from = expression) %>% 
+	mutate(ov_ratio = log(ovary / carcass), hd_ratio = log(head / carcass)) %>% 
+	pivot_longer(c(ov_ratio,hd_ratio),names_to="treatment",values_to="ratio") %>% 
+	filter(!is.na(ratio),!is.na(genetree)) %>%
+	mutate(id = paste(species,treatment,sep="_"),key=seq_id) %>% # choose ID variable
+	group_by(key,id,species,treatment,genetree) %>% summarize(val = mean(ratio)) %>% ungroup()
+
 build_pca_plot <- function(dat) {
 	pca_df <- dat %>% mutate(species = species_codes[species]) %>% 
 		tidyr::spread(.,key,val) %>%
@@ -27,9 +38,9 @@ build_pca_plot <- function(dat) {
 
 homolog_ratio_pca <- build_pca_plot(ave_ave_ratio)
 
-pdf(file = "figures_and_panels/panel_homolog_ratio_pca.pdf",width=3,height=3,useDingbats=F)
-print(homolog_ratio_pca)
-dev.off()
+	pdf(file = "figures_and_panels/panel_homolog_ratio_pca.pdf",width=3,height=3,useDingbats=F)
+	print(homolog_ratio_pca)
+	dev.off()
 
 species_ultrametric_focal <- drop.tip(species_ultrametric,species_ultrametric$tip.label[!(species_ultrametric$tip.label %in% species_names)])
 
@@ -99,7 +110,7 @@ get_evolutionary_changes <- function(data,filt_hash,tree) {
 }
 
 # find trees with minimum number of tips, above threshold
-min_tips_for_asr <- 3 # arbitrary threshold as of Oct 2019
+min_tips_for_asr <- 3 
 filtered_genetree_hashes <- ave_ave_expression %>% 
 	distinct(key,species,.keep_all=T) %>% 
 	group_by(key) %>% tally() %>% ungroup() %>% 
@@ -137,9 +148,9 @@ panel_dist_changes <- ggplot(ovary_changes %>% filter(key %in% full_key_samp),ae
 	theme(axis.text.x = element_blank()) +
 	theme(axis.ticks.x = element_blank()) 
 
-pdf(file = "figures_and_panels/panel_dist_changes.pdf",width=4,height=2,useDingbats=F)
-print(panel_dist_changes)
-dev.off()
+	pdf(file = "figures_and_panels/panel_dist_changes.pdf",width=4,height=2,useDingbats=F)
+	print(panel_dist_changes)
+	dev.off()
 
 panel_hist_changes <- ggplot(ovary_changes,aes(y=scaled_change)) + geom_histogram(binwidth=0.1,fill="black") + scale_x_log10() + geom_histogram(data=ovary_changes %>% filter(child_node == 21),fill="red",binwidth=0.1) +
 	scale_y_continuous(limits=c(-35,35)) +
@@ -147,9 +158,9 @@ panel_hist_changes <- ggplot(ovary_changes,aes(y=scaled_change)) + geom_histogra
 	xlab("count, log10 transformed") + 
 	ylab("scaled evolutionary change") 
 
-pdf(file = "figures_and_panels/panel_hist_changes.pdf",width=1.5,height=2.1,useDingbats=F)
-print(panel_hist_changes)
-dev.off()
+	pdf(file = "figures_and_panels/panel_hist_changes.pdf",width=1.5,height=2.1,useDingbats=F)
+	print(panel_hist_changes)
+	dev.off()
 
 node_order <- c("13","22","14","23","20","21","15","16","17","19","18","3","2","1","6","5","4","12","11","10","9","8","7")
 dir_changes <- ovary_changes %>% mutate(change_type = ifelse(child_val < 0 & parent_val > 0,"FROM_OVARY",ifelse(child_val > 0 & parent_val < 0,"TO_OVARY","SAME")))
@@ -165,9 +176,9 @@ changes_by_nodes <- ggplot(dir_changes,aes(y=scaled_change,x=factor(child_node,l
 	ylab("scaled evolutionary change") + 
 	theme(legend.position="none")
 
-pdf(file = "figures_and_panels/panel_changes_by_nodes.pdf",width=5.2,height=2.5,useDingbats=F)
-print(changes_by_nodes)
-dev.off()
+	pdf(file = "figures_and_panels/panel_changes_by_nodes.pdf",width=5.2,height=2.5,useDingbats=F)
+	print(changes_by_nodes)
+	dev.off()
 
 change1 <- dir_changes %>% filter(change_type == "TO_OVARY") %>% arrange(desc(change)) %>% filter(row_number() == 1)
 change2 <- dir_changes %>% filter(change_type == "TO_OVARY") %>% arrange(desc(change)) %>% filter(row_number() == 2)
@@ -192,49 +203,53 @@ parent_child_vals <- ggplot(dir_changes,aes(y=child_val,x=parent_val,color=chang
 	xlab("ancestral bias in tissue expression") + 
 	ylab("descendant bias in tissue expression") 
 
-pdf(file = "figures_and_panels/panel_parent_child_vals.pdf",width=3,height=3,useDingbats=F)
-print(parent_child_vals)
-dev.off()
+	pdf(file = "figures_and_panels/panel_parent_child_vals.pdf",width=3,height=3,useDingbats=F)
+	print(parent_child_vals)
+	dev.off()
 
-a <- ave_ave_ratio %>% filter(treatment == "ov_ratio") %>% 
+ave_ratio_summary <- ave_ratio %>% filter(treatment == "ov_ratio") %>% 
 	mutate(bias = ifelse(val > 0,"ovary","carcass"),
 	sp_code = species_codes[species]) %>% 
-	select(key,sp_code,val,bias) 
+	select(genetree,species,sp_code,val,bias) 
 
-top_bias_change1 <- ggplot(a %>% filter(key == change1$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + geom_point() +
+top_bias_change1 <- ggplot(ave_ratio_summary %>% filter(genetree == change1$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + 
+	geom_point(size=1) +
 	scale_color_manual(values = c("blue","red")) + 
 	geom_vline(xintercept=0,linetype="dashed",size=0.25) + 
-	scale_x_continuous(limits = c(-5,5)) +
+	scale_x_continuous(limits = c(-5.5,5.5)) +
 	ggtitle(change1$name) +
 	theme(plot.title = element_text(hjust = 0.5)) +
 	theme(text = element_text(size=6)) +
 	theme(axis.title.y = element_blank()) +
 	theme(axis.title.x = element_blank()) +
 	theme(legend.position="none") 
-top_bias_change2 <- ggplot(a %>% filter(key == change2$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + geom_point() +
+top_bias_change2 <- ggplot(ave_ratio_summary %>% filter(genetree == change2$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + 
+	geom_point(size=1) +	
 	scale_color_manual(values = c("blue","red")) + 
 	geom_vline(xintercept=0,linetype="dashed",size=0.25) + 
-	scale_x_continuous(limits = c(-5,5)) +
+	scale_x_continuous(limits = c(-5.5,5.5)) +
 	ggtitle(change2$name) +
 	theme(plot.title = element_text(hjust = 0.5)) +
 		theme(text = element_text(size=6)) +
 	theme(axis.title.y = element_blank()) +
 	theme(axis.title.x = element_blank()) +
 	theme(legend.position="none") 
-top_bias_change3 <- ggplot(a %>% filter(key == change3$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + geom_point() +
+top_bias_change3 <- ggplot(ave_ratio_summary %>% filter(genetree == change3$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + 
+	geom_point(size=1) +	
 	scale_color_manual(values = c("blue","red")) + 
 	geom_vline(xintercept=0,linetype="dashed",size=0.25) + 
-	scale_x_continuous(limits = c(-5,5)) +
+	scale_x_continuous(limits = c(-5.5,5.5)) +
 	ggtitle(change3$name) +
 	theme(plot.title = element_text(hjust = 0.5)) +
 	theme(text = element_text(size=6)) +
 	theme(axis.title.y = element_blank()) +
 	xlab("bias in tissue expression") +
 	theme(legend.position="none") 
-top_bias_change4 <- ggplot(a %>% filter(key == change4$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + geom_point() +
+top_bias_change4 <- ggplot(ave_ratio_summary %>% filter(genetree == change4$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + 
+	geom_point(size=1) +
 	scale_color_manual(values = c("blue","red")) + 
 	geom_vline(xintercept=0,linetype="dashed",size=0.25) + 
-	scale_x_continuous(limits = c(-5,5)) +
+	scale_x_continuous(limits = c(-5.5,5.5)) +
 	ggtitle(paste(ch4_name,"*",sep="")) +
 	theme(text = element_text(size=6)) +
 	theme(plot.title = element_text(hjust = 0.5)) +
@@ -242,9 +257,9 @@ top_bias_change4 <- ggplot(a %>% filter(key == change4$key),aes(y=factor(sp_code
 	xlab("bias in tissue expression") +
 	theme(legend.position="none") 
 
-pdf(file = "figures_and_panels/panel_parent_examples.pdf",width=3,height=3,useDingbats=F)
-grid.arrange(top_bias_change1,top_bias_change2,top_bias_change3,top_bias_change4,ncol=2)
-dev.off()
+	pdf(file = "figures_and_panels/panel_parent_examples.pdf",width=3,height=3,useDingbats=F)
+	grid.arrange(top_bias_change1,top_bias_change2,top_bias_change3,top_bias_change4,ncol=2)
+	dev.off()
 
 change_summary <- ovary_changes %>% group_by(key) %>% filter(!is.na(scaled_change)) %>% 
 	summarize(change_sd = sd(scaled_change),
@@ -344,13 +359,13 @@ genetic_interaction_comparison <- ggplot(bind_rows(data.frame(V1 = unknown_genet
 	theme(text = element_text(size=6)) +
 	theme(legend.position="none")
 
-pdf(file = "figures_and_panels/panel_physical_interaction_comparison.pdf",width=1.2,height=2,useDingbats=F)
-print(physical_interaction_comparison)
-dev.off()
+	pdf(file = "figures_and_panels/panel_physical_interaction_comparison.pdf",width=1.2,height=2,useDingbats=F)
+	print(physical_interaction_comparison)
+	dev.off()
 
-pdf(file = "figures_and_panels/panel_genetic_interaction_comparison.pdf",width=1.5,height=2,useDingbats=F)
-print(genetic_interaction_comparison)
-dev.off()
+	pdf(file = "figures_and_panels/panel_genetic_interaction_comparison.pdf",width=1.5,height=2,useDingbats=F)
+	print(genetic_interaction_comparison)
+	dev.off()
 
 physical_fcs <- replicate(100,build_sample_unknown_cormat(fc=full_cormat,interaction_dat=physical_interactions),simplify=F)
 physical_t_test <- sapply(physical_fcs,function(x){t.test(physical_cor,x)$p.value})
@@ -381,9 +396,9 @@ mat[target_name,target_name] <- 0
 cor_color_option <- "B"
 cor_color_range <- viridis::viridis(option=cor_color_option,n=4)
 
-pdf(file = "figures_and_panels/panel_real_target_interaction_correlations.pdf",width=3,height=3,useDingbats=F)
-qgraph(mar=c(5,5,5,5),borders=F,vTrans=0,mat,maximum=1,layout="circle",posCol=cor_color_range[3],negCol=cor_color_range[2],labels=colnames(mat),label.cex=0.4,label.font=2,label.scale=F)
-dev.off()
+	pdf(file = "figures_and_panels/panel_real_target_interaction_correlations.pdf",width=3,height=3,useDingbats=F)
+	qgraph(mar=c(5,5,5,5),borders=F,vTrans=0,mat,maximum=1,layout="circle",posCol=cor_color_range[3],negCol=cor_color_range[2],labels=colnames(mat),label.cex=0.4,label.font=2,label.scale=F)
+	dev.off()
 
 target_of_int <- target_genetree %>% filter(parent_gene %in% target) %>% pull(genetree) %>% unique
 ovary_changes_cor <- left_join(ovary_changes,data.frame(key = names(full_cormat[target_of_int,]),correlation = full_cormat[target_of_int,]),by="key") %>% 
@@ -398,9 +413,9 @@ target_correlated_values <- ggplot(ovary_changes_cor,aes(x=factor(child_node,lev
 	ylab("scaled evolutionary change") + 
 	xlab("phylogenetic branch")
 
-pdf(file = "figures_and_panels/panel_target_correlated_values.pdf",width=3.25,height=2,useDingbats=F)
-print(target_correlated_values)
-dev.off()
+	pdf(file = "figures_and_panels/panel_target_correlated_values.pdf",width=3.25,height=2,useDingbats=F)
+	print(target_correlated_values)
+	dev.off()
 
 correlation_threshold <- 0.825
 target_int_changes <- ovary_changes_cor %>% filter(abs(correlation) > correlation_threshold)
@@ -415,7 +430,7 @@ tarmat[target_name,] <- target_int_cormat[target_name,]
 tarmat[,target_name] <- target_int_cormat[,target_name]
 tarmat[target_name,target_name] <- NA
 
-pdf(file = "figures_and_panels/panel_observed_target_interaction_correlations.pdf",width=2,height=2,useDingbats=F)
-qgraph(mar=c(5,5,5,5),borders=F,vTrans=0,tarmat,maximum=1,layout="circle",posCol=cor_color_range[3],negCol=cor_color_range[2],labels=colnames(tarmat),label.cex=0.4,label.font=2,label.scale=F)
-dev.off()
+	pdf(file = "figures_and_panels/panel_observed_target_interaction_correlations.pdf",width=2,height=2,useDingbats=F)
+	qgraph(mar=c(5,5,5,5),borders=F,vTrans=0,tarmat,maximum=1,layout="circle",posCol=cor_color_range[3],negCol=cor_color_range[2],labels=colnames(tarmat),label.cex=0.4,label.font=2,label.scale=F)
+	dev.off()
 

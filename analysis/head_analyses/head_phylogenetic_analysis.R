@@ -88,45 +88,49 @@ pdf(file = "figures_and_panels/head_figures_and_panels/panel_head_parent_child_v
 print(parent_child_vals)
 dev.off()
 
-a <- ave_ave_ratio %>% filter(treatment == "hd_ratio") %>% 
+ave_ratio_summary <- ave_ratio %>% filter(treatment == "hd_ratio") %>% 
 	mutate(bias = ifelse(val > 0,"head","carcass"),
 	sp_code = species_codes[species]) %>% 
-	select(key,sp_code,val,bias) 
+	select(genetree,species,sp_code,val,bias) 
 
-top_bias_change1 <- ggplot(a %>% filter(key == change1$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + geom_point() +
+top_bias_change1 <- ggplot(ave_ratio_summary %>% filter(genetree == change1$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + 
+	geom_point(size=1) +
 	scale_color_manual(values = c("blue","red")) + 
 	geom_vline(xintercept=0,linetype="dashed",size=0.25) + 
-	scale_x_continuous(limits = c(-5,5)) +
-	ggtitle(change1$name) +
+	scale_x_continuous(limits = c(-5.5,5.5)) +
+	ggtitle(change1$name) + theme(plot.title = element_text(size = 5)) + 
 	theme(plot.title = element_text(hjust = 0.5)) +
 	theme(text = element_text(size=6)) +
 	theme(axis.title.y = element_blank()) +
 	theme(axis.title.x = element_blank()) +
 	theme(legend.position="none") 
-top_bias_change2 <- ggplot(a %>% filter(key == change2$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + geom_point() +
+top_bias_change2 <- ggplot(ave_ratio_summary %>% filter(genetree == change2$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + 
+	geom_point(size=1) +	
 	scale_color_manual(values = c("blue","red")) + 
 	geom_vline(xintercept=0,linetype="dashed",size=0.25) + 
-	scale_x_continuous(limits = c(-5,5)) +
+	scale_x_continuous(limits = c(-5.5,5.5)) +
 	ggtitle(change2$name) +
 	theme(plot.title = element_text(hjust = 0.5)) +
 		theme(text = element_text(size=6)) +
 	theme(axis.title.y = element_blank()) +
 	theme(axis.title.x = element_blank()) +
 	theme(legend.position="none") 
-top_bias_change3 <- ggplot(a %>% filter(key == change3$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + geom_point() +
+top_bias_change3 <- ggplot(ave_ratio_summary %>% filter(genetree == change3$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + 
+	geom_point(size=1) +	
 	scale_color_manual(values = c("blue","red")) + 
 	geom_vline(xintercept=0,linetype="dashed",size=0.25) + 
-	scale_x_continuous(limits = c(-5,5)) +
+	scale_x_continuous(limits = c(-5.5,5.5)) +
 	ggtitle(change3$name) +
 	theme(plot.title = element_text(hjust = 0.5)) +
 	theme(text = element_text(size=6)) +
 	theme(axis.title.y = element_blank()) +
 	xlab("bias in tissue expression") +
 	theme(legend.position="none") 
-top_bias_change4 <- ggplot(a %>% filter(key == change4$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + geom_point() +
+top_bias_change4 <- ggplot(ave_ratio_summary %>% filter(genetree == change4$key),aes(y=factor(sp_code,levels=species_codes[species_order]),x=val,color = bias)) + 
+	geom_point(size=1) +
 	scale_color_manual(values = c("blue","red")) + 
 	geom_vline(xintercept=0,linetype="dashed",size=0.25) + 
-	scale_x_continuous(limits = c(-5,5)) +
+	scale_x_continuous(limits = c(-5.5,5.5)) +
 	ggtitle(paste(ch4_name,"*",sep="")) +
 	theme(text = element_text(size=6)) +
 	theme(plot.title = element_text(hjust = 0.5)) +
