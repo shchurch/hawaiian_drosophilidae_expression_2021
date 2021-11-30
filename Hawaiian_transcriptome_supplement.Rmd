@@ -201,8 +201,6 @@ print(atlas_max)
 
 ![(#fig:head-correlations) **Evolutionary correlations based on head-biased expression evolution.** A-B Comparison of the dsitribution of Pearson's correlation coefficients based on head-biased expression evolution between genes. Asterisks indicate a significant t-test comparison. A, Genes with no or unknown protein-protein interactions compared to those with reported interactions in FlyBase[@larkin2021flybase]  (p-value=`r round(max(head_t_test_results[[1]]),3)`). B, Correlation comparison between genes with no or uknown genetic interactions and those reported to have enhancement or suppression interactions in FlyBase (unknown vs. enhancemenet p-value=`r gsub("0","<0.001",round(max(head_t_test_results[[2]]),3))`; unknown vs. suppression=`r gsub("0","<0.001",round(max(head_t_test_results[[3]]),3))`; enhancement vs. suppression=`r round(head_t_test_results[[4]]$p.value,3)`). C, The network of strong correlation partners (absolute correlation > `r parameters[[3]]`) with the yolk-protein genes, colored by the direction of correlation. Stronger correlations are shown by brighter colors, and thicker, shorter lines. Nodes are annotated with the gene symbols from the _D. melanogaster_ sequences from that homology group.](figures_and_panels/Figure_head_correlations_V2-01.png)
 
-# Data files
-
 # Tables 
 
 ## Collection and sequencing

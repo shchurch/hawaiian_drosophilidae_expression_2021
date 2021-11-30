@@ -126,10 +126,13 @@ ovary_abs_changes <- get_evolutionary_changes(ave_ave_expression %>%
 ovary_rel_changes <- get_evolutionary_changes(ave_ave_ratio %>% 
 	filter(treatment == "ov_ratio") %>% 
 	select(-id,-treatment),filtered_genetree_hashes,species_ultrametric_labeled) %>%
-	left_join(.,genetree_all_dmel_id %>% rename(genetree = "key"),by="key")
+	left_join(.,genetree_all_dmel_id %>% rename(genetree = "key"),by="key") %>% 
+	mutate(cd = as.numeric(child_node)) %>%
+	mutate(branch = as.character(ifelse(cd < 13,cd, cd - 1))) %>%
+	select(-cd)
 
 # for downstream analyses, use the ratio based values
-ovary_changes <- ovary_rel_changes
+ovary_changes <- ovary_rel_changes 
 full_keys <- ovary_changes %>% 
 	filter(as.integer(child_node) < 13) %>% 
 	group_by(key) %>% tally() %>% filter(n == 12) %>% 
@@ -162,10 +165,13 @@ panel_hist_changes <- ggplot(ovary_changes,aes(y=scaled_change)) + geom_histogra
 	print(panel_hist_changes)
 	dev.off()
 
-node_order <- c("13","22","14","23","20","21","15","16","17","19","18","3","2","1","6","5","4","12","11","10","9","8","7")
-dir_changes <- ovary_changes %>% mutate(change_type = ifelse(child_val < 0 & parent_val > 0,"FROM_OVARY",ifelse(child_val > 0 & parent_val < 0,"TO_OVARY","SAME")))
+node_order <- c("21","13","22","19","20","14","15","16","18","17","3","2","1","6","5","4","12","11","10","9","8","7")
+dir_changes <- ovary_changes %>% mutate(change_type = ifelse(child_val < 0 & parent_val > 0,"FROM_OVARY",ifelse(child_val > 0 & parent_val < 0,"TO_OVARY","SAME"))) %>% 
+	mutate(cd = as.numeric(child_node)) %>%
+	mutate(branch = as.character(ifelse(cd < 13,cd, cd - 1))) %>%
+	select(-cd)
 
-changes_by_nodes <- ggplot(dir_changes,aes(y=scaled_change,x=factor(child_node,levels=node_order),color=change_type)) + 
+changes_by_nodes <- ggplot(dir_changes,aes(y=scaled_change,x=factor(branch,levels=node_order),color=change_type)) + 
 	geom_blank() +
 	geom_jitter(size=0.25,data=dir_changes %>% filter(change_type == "SAME"),color="gray") +
 	geom_jitter(size=0.25,data=dir_changes %>% filter(change_type == "FROM_OVARY"),color="blue") +
@@ -402,9 +408,12 @@ cor_color_range <- viridis::viridis(option=cor_color_option,n=4)
 
 target_of_int <- target_genetree %>% filter(parent_gene %in% target) %>% pull(genetree) %>% unique
 ovary_changes_cor <- left_join(ovary_changes,data.frame(key = names(full_cormat[target_of_int,]),correlation = full_cormat[target_of_int,]),by="key") %>% 
-	na.omit
+	na.omit %>% 
+	mutate(cd = as.numeric(child_node)) %>%
+	mutate(branch = as.character(ifelse(cd < 13,cd, cd - 1))) %>%
+	select(-cd)
 
-target_correlated_values <- ggplot(ovary_changes_cor,aes(x=factor(child_node,levels=node_order),y=scaled_change,group=name,color=correlation)) +
+target_correlated_values <- ggplot(ovary_changes_cor,aes(x=factor(branch,levels=node_order),y=scaled_change,group=name,color=correlation)) +
 	viridis::scale_color_viridis(option = "B") + 
 	geom_jitter(size=0.25,pch=16,aes(alpha=abs(correlation))) + 
 	geom_point(data=ovary_changes %>% filter(name == target_name),color="white",fill="black",size=1.25,stroke=0.25,pch=21) + 
