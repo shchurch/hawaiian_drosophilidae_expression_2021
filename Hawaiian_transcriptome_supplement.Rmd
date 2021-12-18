@@ -15,6 +15,8 @@ bibliography: Hawaiian_transcriptome.bib
 csl: nature.csl
 link-citations: yes
 header-includes:
+ \usepackage[left]{lineno}
+ \linenumbers
  \usepackage{xr}
  \usepackage{float}
  \usepackage{array}
@@ -183,7 +185,7 @@ print(atlas_max)
 
 ## Linear modeling
 
-![(#fig:homology-orthology) **Representation across homology and orthology groups.** A, The number of species with expression data per homology group, inferred with the agalma pipeline using an all-by-all BLAST approach between the twelve reference transcriptomes and twelve other published Drosophilidae genomes. B, The number of species with expression data per orthology group, inferred with the agalma pipeline, using genetrees to identify orthologs.](figures_and_panels/Figure_gene_representation_V2-01.png)
+![(#fig:homology-orthology) **Representation across homology and orthology groups.** A, The number of species with expression data per homology group, inferred with the agalma pipeline using an all-by-all BLAST approach between the twelve reference transcriptomes and twelve other published Drosophilidae genomes. B, The number of species with expression data per orthology group, inferred with the agalma pipeline, using gene trees to identify orthologs.](figures_and_panels/Figure_gene_representation_V2-01.png)
 
 ![(#fig:PCA-all) **Principal component analysis across species.** A, PCA using average expression across genes grouped by homology, as inferred with the agalma pipeline. B, PCA using average expression bias, calculated as an expression ratio, across genes grouped by homology. C, Phylogeny of species shown in A and B.](figures_and_panels/Figure_homolog_pca_V2-01.png)
 
