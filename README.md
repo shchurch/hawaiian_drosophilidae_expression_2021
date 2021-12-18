@@ -2,6 +2,9 @@
 This repostiory contains the data and code for a future manuscript on tissue-specific expression evolution in Hawaiian _Drosophila_ and _Scaptomyza_ flies.
 
 There is an accompanying data visualization that can be found here:
+https://shchurch.shinyapps.io/hawaiian_fly_dataviz_2021
+
+and here:
 https://github.com/shchurch/hawaiian_fly_dataviz_2021
 
 ## Contents
