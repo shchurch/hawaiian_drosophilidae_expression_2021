@@ -1,5 +1,5 @@
 ---
-title: "The evolution of ovary-specific gene expression in Hawaiian Drosophilidae: Supplementary methods and tables"
+title: "The evolution of ovary-biased gene expression in Hawaiian _Drosophila_ - Supplementary methods and tables"
 author: 
     - Samuel H. Church^1,2,^\* 
     - Catriona Munro^3^
@@ -59,6 +59,7 @@ set.seed(84095)
 #    source("analysis/phylogenetic_expression/phylogenetic_analysis.R")
 #    
 #    source("analysis/ANOVA/tissues_and_species_anova_pair.R")
+#    source("analysis/ANOVA/tissues_and_species_ortholog.R")
 #    
 #    anova_results <- list(anova_ov_PW_red_results,anova_ov_red_results)
 #    save(anova_results,file="analysis/results_Robjects/selected_anova_results.RData")
@@ -185,9 +186,9 @@ print(atlas_max)
 
 ## Linear modeling
 
-![(#fig:homology-orthology) **Representation across homology and orthology groups.** A, The number of species with expression data per homology group, inferred with the agalma pipeline using an all-by-all BLAST approach between the twelve reference transcriptomes and twelve other published Drosophilidae genomes. B, The number of species with expression data per orthology group, inferred with the agalma pipeline, using gene trees to identify orthologs.](figures_and_panels/Figure_gene_representation_V2-01.png)
+![(#fig:homology-orthology) **Representation across homology and orthology groups.** A, The number of target species with expression data per homology group, inferred with the agalma pipeline using an all-by-all BLAST approach between the twelve reference transcriptomes and twelve other published Drosophilidae genomes. Groups with zero species are those that contain only genes from the species with published genomes, and not the twelve target species sequenced this study. B, The number of target species with expression data per orthology group, inferred with the agalma pipeline, using gene trees to identify orthologs.](figures_and_panels/Figure_gene_representation_V3-01.png)
 
-![(#fig:PCA-all) **Principal component analysis across species.** A, PCA using average expression across genes grouped by homology, as inferred with the agalma pipeline. B, PCA using average expression bias, calculated as an expression ratio, across genes grouped by homology. C, Phylogeny of species shown in A and B.](figures_and_panels/Figure_homolog_pca_V2-01.png)
+![(#fig:PCA-all) **Principal component analysis across species.** A, PCA using average expression across genes grouped by homology, as inferred with the agalma pipeline. B, PCA using average expression bias, calculated as an expression ratio between the ovary and carcass or head and carcass. Ratios are calculated across genes grouped by homology. C, Phylogeny of species shown in A and B.](figures_and_panels/Figure_homolog_pca_V2-01.png)
 
 ![(#fig:linear-scatter) **Linear model results by gene.** A, Results of a linear model analysis between genes, grouped by homology as inferred in the agalma pipeline, comparing two _picture-wing_ species, _D. macrothrix_ and _D. sproati_. Orange points are tissue-variable genes (TVGs), cyan are species-variable genes (SVGs), gray are neither. B, Results of the same analysis across all twelve Hawaiian drosophilid species studied here.](figures_and_panels/Figure_linear_model_scatterplot_V2-01.png)
 
@@ -195,13 +196,17 @@ print(atlas_max)
 
 ![(#fig:linear-no-Svar) **Proportion of variance across species and tissues, excluding _S. varia_.** A, The mean proportion of variance across genes attributed to species and tissues, comparing the ovary and carcass across four clades, excluding _S. varia_ from clade D. B, The same plot, comparing the head and carcass. Clades correspond to those shown in Fig. 3A.](figures_and_panels/Figure_linear_model_no_Svar_V1-01.png)
 
-![(#fig:linear-pairwise) **Proportion of variance across species and tissues, calculated using pairwise combinations of species.** The mean proportion of variance across genes attributed to species and tissues, comparing the ovary and carcass across all pairwise combinations of twelve species. Lines and gray shadow shows the regression and 95\% confidence interval using a linear model.](figures_and_panels/Figure_pairwise_linear_model_V1-01.png)
+![(#fig:linear-ortholog) **Proportion of variance across species and tissues, calculated using a dataset of 1:1 orthologs.** The mean proportion of variance across genes attributed to species and tissues, comparing the ovary and carcass across four clades. Sample sizes are for clade A: 2,185 orthology groups, clade B: 918, clade C: 87, and clade D: 37.](figures_and_panels/Figure_ortholog_linear_model_V1-01.png)
+
+![(#fig:linear-pairwise) **Proportion of variance across species and tissues, calculated using pairwise combinations of species.** The mean proportion of variance across genes attributed to species and tissues, comparing the ovary and carcass across all pairwise combinations of twelve species, shown as colored bars. Lines and gray shadow shows the regression and 95\% confidence interval using a linear model.](figures_and_panels/Figure_pairwise_linear_model_V2-01.png)
 
 ## Phylogenetic analysis 
 
+![(#fig:ortholog-changes-by-node) **Changes in ovary-biased expression in strict orthologs.**  The phylogeny with all 22 branches numbered. E, The distribution of changes in expression of orthologs, grouped by branch, with random jitter on the x-axis within each group. Points colored according to the qualitative change in bias, either from more expression in ovary than carcass to less (blue), the reverse (red), or no change in overall bias (gray).](figures_and_panels/Figure_ortholog_changes_by_node_V1-01.png){width=75%}
+
 ![(#fig:head-bias-changes) **Changes in head-biased expression evolution.** Four genes displaying large swings in relative head expression, showing the expression bias for each transcript colored according to more expression in the head (red) or carcass (blue). Panels are annotated with the gene symbol from the _D. melanogaster_ sequences in the same homology group, with the exception of _vilya_\*, which was annotated using a direct BLAST search since no _D. melanogaster_ sequence was present in that group.](figures_and_panels/Figure_head_bias_change_examples_V1-01.png){width=75%}
 
-![(#fig:head-correlations) **Evolutionary correlations based on head-biased expression evolution.** A-B Comparison of the dsitribution of Pearson's correlation coefficients based on head-biased expression evolution between genes. Asterisks indicate a significant t-test comparison. A, Genes with no or unknown protein-protein interactions compared to those with reported interactions in FlyBase[@larkin2021flybase]  (p-value=`r round(max(head_t_test_results[[1]]),3)`). B, Correlation comparison between genes with no or uknown genetic interactions and those reported to have enhancement or suppression interactions in FlyBase (unknown vs. enhancemenet p-value=`r gsub("0","<0.001",round(max(head_t_test_results[[2]]),3))`; unknown vs. suppression=`r gsub("0","<0.001",round(max(head_t_test_results[[3]]),3))`; enhancement vs. suppression=`r round(head_t_test_results[[4]]$p.value,3)`). C, The network of strong correlation partners (absolute correlation > `r parameters[[3]]`) with the yolk-protein genes, colored by the direction of correlation. Stronger correlations are shown by brighter colors, and thicker, shorter lines. Nodes are annotated with the gene symbols from the _D. melanogaster_ sequences from that homology group.](figures_and_panels/Figure_head_correlations_V2-01.png)
+![(#fig:head-correlations) **Evolutionary correlations based on head-biased expression evolution.** A-B Comparison of the dsitribution of Pearson's correlation coefficients based on head-biased expression evolution between genes. Asterisks indicate a significant t-test comparison. Box plots indicate mean, upper and lower quartiles, and 1.5x interquartile ranges. A, Genes with no or unknown protein-protein interactions compared to those with reported interactions in FlyBase[@larkin2021flybase]  (maximum p-value=`r round(max(head_t_test_results[[1]]),3)` over 100 replicates). B, Correlation comparison between genes with no or uknown genetic interactions and those reported to have enhancement or suppression interactions in FlyBase (unknown vs. enhancemenet max. p-value=`r gsub("0","<0.001",round(max(head_t_test_results[[2]]),3))`; unknown vs. suppression max. p-value=`r gsub("0","<0.001",round(max(head_t_test_results[[3]]),3))`; enhancement vs. suppression p-value=`r round(head_t_test_results[[4]]$p.value,3)`). C, The network of strong correlation partners (absolute correlation > `r parameters[[3]]`) with the yolk-protein genes, colored by the direction of correlation. Stronger correlations are shown by brighter colors, and thicker, shorter lines. Nodes are annotated with the gene symbols from the _D. melanogaster_ sequences from that homology group.](figures_and_panels/Figure_head_correlations_V2-01.png)
 
 # Tables 
 
