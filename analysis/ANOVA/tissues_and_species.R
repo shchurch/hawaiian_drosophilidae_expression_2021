@@ -41,16 +41,16 @@ build_pca_plot <- function(dat) {
 
 homolog_pca <- build_pca_plot(ave_ave_expression)
 
-	pdf(file = "figures_and_panels/panel_homolog_pca.pdf",width=3,height=3,useDingbats=F)
-	print(homolog_pca)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_homolog_pca.pdf",width=3,height=3,useDingbats=F)
+#	print(homolog_pca)
+#	dev.off()
 
 panel_species_tree_focal <- species_tree_focal
 panel_species_tree_focal$tip.label <- species_codes[panel_species_tree_focal$tip.label]
 
-	pdf(file="figures_and_panels/panel_species_focal.pdf",width=3,height=5,useDingbats=F)
-	plot(panel_species_tree_focal)
-	dev.off()
+#	pdf(file="figures_and_panels/panel_species_focal.pdf",width=3,height=5,useDingbats=F)
+#	plot(panel_species_tree_focal)
+#	dev.off()
 
 ### COUNT REPRESENTATION
 
@@ -70,21 +70,21 @@ count_orthology <- left_join(expression_genetree %>% distinct(ortholog) %>% filt
 	group_by(ortholog) %>% tally()),by="ortholog") %>%
 	mutate(n = replace_na(n,0))
 
-	pdf(file="figures_and_panels/panel_homolog_representation.pdf",width=5,height=1.5,useDingbats=F)
-	print(ggplot(count_homology,aes(x=n)) + 
-		geom_bar(fill="black") + 
-		scale_x_continuous(breaks = c(0,seq(1:12))) + 
-		xlab("species with expression data per homology group") + 
-		ylab("count"))
-	dev.off()
-
-	pdf(file="figures_and_panels/panel_ortholog_representation.pdf",width=5,height=1.5,useDingbats=F)
-	print(ggplot(count_orthology,aes(x=n)) + 
-		geom_bar(fill="black") + 
-		scale_x_continuous(breaks = c(0,seq(1:12))) + 
-		xlab("species with expression data per orthology group") + 
-		ylab("count"))
-	dev.off()
+#	pdf(file="figures_and_panels/panel_homolog_representation.pdf",width=5,height=1.5,useDingbats=F)
+#	print(ggplot(count_homology,aes(x=n)) + 
+#		geom_bar(fill="black") + 
+#		scale_x_continuous(breaks = c(0,seq(1:12))) + 
+#		xlab("target species with expression data per homology group") + 
+#		ylab("count"))
+#	dev.off()
+#
+#	pdf(file="figures_and_panels/panel_ortholog_representation.pdf",width=5,height=1.5,useDingbats=F)
+#	print(ggplot(count_orthology,aes(x=n)) + 
+#		geom_bar(fill="black") + 
+#		scale_x_continuous(breaks = c(0,seq(1:12))) + 
+#		xlab("target species with expression data per orthology group") + 
+#		ylab("count"))
+#	dev.off()
 
 ### BUILD ANOVA DATASETS FOR LINEAR MODELING
 
@@ -104,12 +104,12 @@ anova_ov_table <- expression_genetree %>%
 anova_ov_tab <- anova_ov_table %>% select(-id) %>% as.data.frame() 
 rownames(anova_ov_tab) <- anova_ov_table %>% pull(id)
 
-	write.table(anova_ov_tab,file="analysis/ANOVA/ANOVA_results/anova_ovary_table.tsv",row.names=T,col.names=T,sep="\t")
+#	write.table(anova_ov_tab,file="analysis/ANOVA/ANOVA_results/anova_ovary_table.tsv",row.names=T,col.names=T,sep="\t")
 
 ### REDUCED ANOVA, NO MISSING VALUES
 
 anova_ov_red_tab <- na.omit(anova_ov_tab)
-	write.table(anova_ov_red_tab,file="analysis/ANOVA/ANOVA_results/anova_ovary_reduced_table.tsv",row.names=T,col.names=T,sep="\t")
+#	write.table(anova_ov_red_tab,file="analysis/ANOVA/ANOVA_results/anova_ovary_reduced_table.tsv",row.names=T,col.names=T,sep="\t")
 
 ### PRINT ANOVA METADATA 
 
@@ -117,21 +117,20 @@ anova_metadata <- library_info %>% filter(!library_id %in% resequenced_ids) %>%
 	mutate(id = paste("sample_",library_id,sep=""),
 	species = species_codes[gsub(" ","_",species)]) %>% 
 	select(species,treatment,id) 
-	write.table(anova_metadata,file="analysis/ANOVA/ANOVA_results/anova_metadata.tsv",sep="\t",row.names=F,col.names=T,quote=F)
+#	write.table(anova_metadata,file="analysis/ANOVA/ANOVA_results/anova_metadata.tsv",sep="\t",row.names=F,col.names=T,quote=F)
 
 ### RUN FULL ANOVA
 
 anova_command <- "Rscript analysis/ANOVA/Breschi_anova.R -i analysis/ANOVA/ANOVA_results/anova_ovary_table.tsv -o analysis/ANOVA/ANOVA_results/anova_ovary_table_results.tsv -p 0.01 -m analysis/ANOVA/ANOVA_results/anova_metadata.tsv --merge_mdata_on id -F treatment+species -r TRUE"
-	system(anova_command)
+#	system(anova_command)
 anova_ov_results <- read.table("analysis/ANOVA/ANOVA_results/anova_ovary_table_results.tsv",header=T,stringsAsFactors=F)
 
 ### RUN REDUCED ANOVA
 
 anova_command <- "Rscript analysis/ANOVA/Breschi_anova.R -i analysis/ANOVA/ANOVA_results/anova_ovary_reduced_table.tsv -o analysis/ANOVA/ANOVA_results/anova_ovary_reduced_table_results.tsv -p 0.01 -m analysis/ANOVA/ANOVA_results/anova_metadata.tsv --merge_mdata_on id -F treatment+species"
-	system(anova_command)
+#	system(anova_command)
 anova_ov_red_results <- read.table("analysis/ANOVA/ANOVA_results/anova_ovary_reduced_table_results.tsv",header=T,stringsAsFactors=F)
 
-### TMP
 ### BUILD AND RUN REDUCED ANOVA ON ALL SPECIES -  SVAR
 anova_ov_red2_table <- expression_genetree %>% 
 	filter(species != "Scaptomyza_varia") %>% 
@@ -148,10 +147,10 @@ anova_ov_red2_table <- expression_genetree %>%
 anova_ov_red2_tab <- anova_ov_red2_table %>% select(-id) %>% as.data.frame() 
 rownames(anova_ov_red2_tab) <- anova_ov_red2_table %>% pull(id)
 anova_ov_red2_tab <- na.omit(anova_ov_red2_tab)
-	write.table(anova_ov_red2_tab,file="analysis/ANOVA/ANOVA_results/anova_ovary_reduced2_table.tsv",row.names=T,col.names=T,sep="\t")
+#	write.table(anova_ov_red2_tab,file="analysis/ANOVA/ANOVA_results/anova_ovary_reduced2_table.tsv",row.names=T,col.names=T,sep="\t")
 
 anova_command <- "Rscript analysis/ANOVA/Breschi_anova.R -i analysis/ANOVA/ANOVA_results/anova_ovary_reduced2_table.tsv -o analysis/ANOVA/ANOVA_results/anova_ovary_reduced2_table.tsv -p 0.01 -m analysis/ANOVA/ANOVA_results/anova_metadata.tsv --merge_mdata_on id -F treatment+species"
-	system(anova_command)
+#	system(anova_command)
 anova_ov_red2_results <- read.table("analysis/ANOVA/ANOVA_results/anova_ovary_reduced2_table.tsv",header=T,stringsAsFactors=F)
 
 ### BUILD AND RUN REDUCED ANOVA ON HI DROSOPHILA CLADE
@@ -170,14 +169,13 @@ anova_ov_HIDROS_table <- expression_genetree %>%
 anova_ov_HIDROS_tab <- anova_ov_HIDROS_table %>% select(-id) %>% as.data.frame() 
 rownames(anova_ov_HIDROS_tab) <- anova_ov_HIDROS_table %>% pull(id)
 anova_ov_HIDROS_red_tab <- na.omit(anova_ov_HIDROS_tab)
-	write.table(anova_ov_HIDROS_red_tab,file="analysis/ANOVA/ANOVA_results/anova_ovary_HIDrosophila_reduced_table.tsv",row.names=T,col.names=T,sep="\t")
+#	write.table(anova_ov_HIDROS_red_tab,file="analysis/ANOVA/ANOVA_results/anova_ovary_HIDrosophila_reduced_table.tsv",row.names=T,col.names=T,sep="\t")
 
 anova_command <- "Rscript analysis/ANOVA/Breschi_anova.R -i analysis/ANOVA/ANOVA_results/anova_ovary_HIDrosophila_reduced_table.tsv -o analysis/ANOVA/ANOVA_results/anova_ovary_HIDrosophila_reduced_table_results.tsv -p 0.01 -m analysis/ANOVA/ANOVA_results/anova_metadata.tsv --merge_mdata_on id -F treatment+species"
-	system(anova_command)
+#	system(anova_command)
 anova_ov_HIDROS_red_results <- read.table("analysis/ANOVA/ANOVA_results/anova_ovary_HIDrosophila_reduced_table_results.tsv",header=T,stringsAsFactors=F)
 
 ### BUILD AND RUN REDUCED ANOVA ON PNA CLADE
-
 anova_ov_PNA_table <- expression_genetree %>% 
 	filter(species %in% PNA) %>% 
 	filter(treatment %in% c("ovary","carcass")) %>% # focus on comparison of ovary and body
@@ -193,14 +191,13 @@ anova_ov_PNA_table <- expression_genetree %>%
 anova_ov_PNA_tab <- anova_ov_PNA_table %>% select(-id) %>% as.data.frame() 
 rownames(anova_ov_PNA_tab) <- anova_ov_PNA_table %>% pull(id)
 anova_ov_PNA_red_tab <- na.omit(anova_ov_PNA_tab)
-	write.table(anova_ov_PNA_red_tab,file="analysis/ANOVA/ANOVA_results/anova_ovary_PNA_reduced_table.tsv",row.names=T,col.names=T,sep="\t")
+#	write.table(anova_ov_PNA_red_tab,file="analysis/ANOVA/ANOVA_results/anova_ovary_PNA_reduced_table.tsv",row.names=T,col.names=T,sep="\t")
 
 anova_command <- "Rscript analysis/ANOVA/Breschi_anova.R -i analysis/ANOVA/ANOVA_results/anova_ovary_PNA_reduced_table.tsv -o analysis/ANOVA/ANOVA_results/anova_ovary_PNA_reduced_table_results.tsv -p 0.01 -m analysis/ANOVA/ANOVA_results/anova_metadata.tsv --merge_mdata_on id -F treatment+species"
-	system(anova_command)
+#	system(anova_command)
 anova_ov_PNA_red_results <- read.table("analysis/ANOVA/ANOVA_results/anova_ovary_PNA_reduced_table_results.tsv",header=T,stringsAsFactors=F)
 
 ### BUILD AND RUN REDUCED ANOVA ON PW CLADE
-
 anova_ov_PW_table <- expression_genetree %>% 
 	filter(species %in% c("Drosophila_sproati","Drosophila_macrothrix")) %>% 
 	filter(treatment %in% c("ovary","carcass")) %>% # focus on comparison of ovary and body
@@ -216,10 +213,10 @@ anova_ov_PW_table <- expression_genetree %>%
 anova_ov_PW_tab <- anova_ov_PW_table %>% select(-id) %>% as.data.frame() 
 rownames(anova_ov_PW_tab) <- anova_ov_PW_table %>% pull(id)
 anova_ov_PW_red_tab <- na.omit(anova_ov_PW_tab)
-	write.table(anova_ov_PW_red_tab,file="analysis/ANOVA/ANOVA_results/anova_ovary_PW_reduced_table.tsv",row.names=T,col.names=T,sep="\t")
+#	write.table(anova_ov_PW_red_tab,file="analysis/ANOVA/ANOVA_results/anova_ovary_PW_reduced_table.tsv",row.names=T,col.names=T,sep="\t")
 
 anova_command <- "Rscript analysis/ANOVA/Breschi_anova.R -i analysis/ANOVA/ANOVA_results/anova_ovary_PW_reduced_table.tsv -o analysis/ANOVA/ANOVA_results/anova_ovary_PW_reduced_table_results.tsv -p 0.01 -m analysis/ANOVA/ANOVA_results/anova_metadata.tsv --merge_mdata_on id -F treatment+species"
-	system(anova_command)
+#	system(anova_command)
 anova_ov_PW_red_results <- read.table("analysis/ANOVA/ANOVA_results/anova_ovary_PW_reduced_table_results.tsv",header=T,stringsAsFactors=F)
 
 
@@ -264,9 +261,9 @@ prop_phyl_dist <- ggplot(data = data.frame(prop = mean_prop_treatment,depth = no
 	ylab("mean proportion\nof variance") +
 	scale_x_continuous(limits=c(0,1.04))
 
-	pdf(file = "figures_and_panels/panel_prop_variation_by_phylogenetic_distance.pdf",width=3,height=1.75,useDingbats=F)
-	print(prop_phyl_dist)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_prop_variation_by_phylogenetic_distance.pdf",width=3,height=1.75,useDingbats=F)
+#	print(prop_phyl_dist)
+#	dev.off()
 
 anova_phyl_dist2 <- lapply(list(anova_ov_red2_results,anova_ov_HIDROS_red_results,anova_ov_PNA_red_results,anova_ov_PW_red_results),summarize_anova_results)
 
@@ -283,9 +280,9 @@ prop_phyl_dist2 <- ggplot(data = data.frame(prop = mean_prop_treatment2,depth = 
 	ylab("mean proportion\nof variance") +
 	scale_x_continuous(limits=c(0,1.04))
 
-	pdf(file = "figures_and_panels/panel_prop_variation_by_phylogenetic_distance2.pdf",width=3,height=1.75,useDingbats=F)
-	print(prop_phyl_dist2)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_prop_variation_by_phylogenetic_distance2.pdf",width=3,height=1.75,useDingbats=F)
+#	print(prop_phyl_dist2)
+#	dev.off()
 
 
 n_homologs_phyl_dist <- ggplot(bind_rows(anova_phyl_dist),aes(x=node_depth,fill=VG)) + 
@@ -297,9 +294,9 @@ n_homologs_phyl_dist <- ggplot(bind_rows(anova_phyl_dist),aes(x=node_depth,fill=
 	ylab("homolog groups") +
 	scale_x_continuous(limits=c(0,1.04))
 
-	pdf(file = "figures_and_panels/panel_homologs_by_phylogenetic_distance.pdf",width=3,height=1.6,useDingbats=F)
-	print(n_homologs_phyl_dist)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_homologs_by_phylogenetic_distance.pdf",width=3,height=1.6,useDingbats=F)
+#	print(n_homologs_phyl_dist)
+#	dev.off()
 
 plot_anova_ov_PW_red <- ggplot(summarize_anova_results(anova_ov_PW_red_results),aes(y=prop_treatment,x=prop_species,color=VG)) + 
 	geom_point(size=0.25) + 
@@ -310,9 +307,9 @@ plot_anova_ov_PW_red <- ggplot(summarize_anova_results(anova_ov_PW_red_results),
 	ylab("proportion of variance across tissue") + 
 	xlab("proportion of variance across species")
 
-	pdf(file = "figures_and_panels/panel_anova_plot_ovary_PictureWing_reduced.pdf",width=3,height=3,useDingbats=F)
-	print(plot_anova_ov_PW_red)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_anova_plot_ovary_PictureWing_reduced.pdf",width=3,height=3,useDingbats=F)
+#	print(plot_anova_ov_PW_red)
+#	dev.off()
 
 plot_anova_ov_red <- ggplot(summarize_anova_results(anova_ov_red_results),aes(y=prop_treatment,x=prop_species,color=VG)) + 
 	geom_point(size=0.25) + 
@@ -323,9 +320,9 @@ plot_anova_ov_red <- ggplot(summarize_anova_results(anova_ov_red_results),aes(y=
 	ylab("proportion of variance across tissue") + 
 	xlab("proportion of variance across species")
 
-	pdf(file = "figures_and_panels/panel_anova_plot_ovary_reduced.pdf",width=3,height=3,useDingbats=F)
-	print(plot_anova_ov_red)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_anova_plot_ovary_reduced.pdf",width=3,height=3,useDingbats=F)
+#	print(plot_anova_ov_red)
+#	dev.off()
 
 anova_ov_red_meanfoldchange <- summarize_anova_results(anova_ov_red_results) %>% select(VG,prop_treatment,prop_species,genetree) %>% 
 	left_join(.,(r %>% filter(species %in% PNA) %>%
@@ -344,9 +341,9 @@ plot_anova_meanfoldchange <- ggplot(anova_ov_red_meanfoldchange,aes(y = prop_tre
 	ylab("proportion of variance across tissue") + 
 	xlab("mean log2 fold change")
 
-	pdf(file = "figures_and_panels/panel_anova_vs_meanlog2foldchange.pdf",width=3,height=3,useDingbats=F)
-	print(plot_anova_meanfoldchange)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_anova_vs_meanlog2foldchange.pdf",width=3,height=3,useDingbats=F)
+#	print(plot_anova_meanfoldchange)
+#	dev.off()
 
 plot_anova_meanfoldchange_TVGlabel <- ggplot(data=anova_ov_red_meanfoldchange %>% left_join(.,genetree_all_dmel_id,by="genetree") %>% filter(VG == "TVG",meanl2fc > -2),aes(y=prop_treatment,x=meanl2fc,label=name)) + 
 	geom_point(size=0.25,color="dark orange") +
@@ -356,6 +353,6 @@ plot_anova_meanfoldchange_TVGlabel <- ggplot(data=anova_ov_red_meanfoldchange %>
 	xlab("mean log2 fold change") + 
 	scale_x_continuous(limits=c(-1,8))
 
-	pdf(file = "figures_and_panels/panel_anova_vs_meanlog2foldchange_TVGlabel.pdf",width=3,height=3,useDingbats=F)
-	print(plot_anova_meanfoldchange_TVGlabel)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_anova_vs_meanlog2foldchange_TVGlabel.pdf",width=3,height=3,useDingbats=F)
+#	print(plot_anova_meanfoldchange_TVGlabel)
+#	dev.off()

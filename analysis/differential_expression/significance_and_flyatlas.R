@@ -83,9 +83,9 @@ plot_volcanos <- function(sp,ann_genes){
 
 volcanos <- lapply(seq(1:length(annotated_genes)),plot_volcanos,ann_genes=annotated_genes)
 
-	pdf(file = "figures_and_panels/panel_volcano_exemplar.pdf",width=3,height=1.1,useDingbats=F)
-	print(plot_volcanos(1,annotated_genes) + theme(legend.position = "right"))
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_volcano_exemplar.pdf",width=3,height=1.1,useDingbats=F)
+#	print(plot_volcanos(1,annotated_genes) + theme(legend.position = "right"))
+#	dev.off()
 
 plot_grid_volcanos <- function(sp,ann_genes){
 	res_df <- ann_genes[[sp]] %>% as.data.frame()
@@ -106,18 +106,18 @@ plot_grid_volcanos <- function(sp,ann_genes){
 
 grid_volcanos <- lapply(seq(1:length(annotated_genes)),plot_grid_volcanos,ann_genes=annotated_genes)
 
-	pdf(file = "figures_and_panels/panel_volcano_grid.pdf",width=9,height=11,useDingbats=F)
-	grid.arrange(grobs = grid_volcanos[match(species_order,species_names)],ncol=3)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_volcano_grid.pdf",width=9,height=11,useDingbats=F)
+#	grid.arrange(grobs = grid_volcanos[match(species_order,species_names)],ncol=3)
+#	dev.off()
 
 ### PLOT REFERENCE TREE
 
-	pdf(file="figures_and_panels/panel_species_ultrametric.pdf",width=6,height=5,useDingbats=F)
-	panel_species_ultrametric <- species_ultrametric
-	panel_species_ultrametric$tip.label <- gsub("Drosophila_","D. ",panel_species_ultrametric$tip.label)
-	panel_species_ultrametric$tip.label <- gsub("Scaptomyza_","S. ",panel_species_ultrametric$tip.label)
-	plot(panel_species_ultrametric)
-	dev.off()
+#	pdf(file="figures_and_panels/panel_species_ultrametric.pdf",width=6,height=5,useDingbats=F)
+#	panel_species_ultrametric <- species_ultrametric
+#	panel_species_ultrametric$tip.label <- gsub("Drosophila_","D. ",panel_species_ultrametric$tip.label)
+#	panel_species_ultrametric$tip.label <- gsub("Scaptomyza_","S. ",panel_species_ultrametric$tip.label)
+#	plot(panel_species_ultrametric)
+#	dev.off()
 
 ### PLOT JITTER PLOT SHOWING SIGNIFICANCE ###
 
@@ -136,9 +136,9 @@ significance_jitter <- ggplot(r,
 	geom_vline(xintercept=0,linetype="dashed",size=0.1)
 
 
-	pdf(file = "figures_and_panels/panel_significance_jitter.pdf",width=3,height=2,useDingbats=F)
-	print(significance_jitter)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_significance_jitter.pdf",width=3,height=2,useDingbats=F)
+#	print(significance_jitter)
+#	dev.off()
 
 	
 ### PLOT JITTER PLOT WITH ATLAS OVERLAY ###
@@ -157,9 +157,9 @@ atlas_jitter <- ggplot(r,
 	geom_vline(xintercept=0,linetype="dashed",size=0.1)
 	xlab("log2 fold change")
 
-	pdf(file = "figures_and_panels/panel_atlas_jitter.pdf",width=3,height=2,useDingbats=F)
-	print(atlas_jitter)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_atlas_jitter.pdf",width=3,height=2,useDingbats=F)
+#	print(atlas_jitter)
+#	dev.off()
 
 ### PLOT JITTER PLOT WITH CORE PARENT GENE OVERLAY
 
@@ -175,9 +175,9 @@ core_parent_gene_jitter <- ggplot(r,
 	geom_vline(xintercept=0,linetype="dashed",size=0.1)
 	xlab("log2 fold change")
 
-	pdf(file = "figures_and_panels/panel_atlas_core_jitter.pdf",width=3,height=2,useDingbats=F)
-	print(core_parent_gene_jitter)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_atlas_core_jitter.pdf",width=3,height=2,useDingbats=F)
+#	print(core_parent_gene_jitter)
+#	dev.off()
 
 
 ### PLOT SCATTER PLOT WITH ENRICHMENT VS MEAN LOG FOLD CHANGE ###
@@ -201,9 +201,9 @@ mean_fold_change_enrichment_scatter <- ggplot(mean_fold_change_enrichment,aes(x 
 	ylab("Dmel ovary expression enrichment") +
 	xlab("mean log2 fold change across Hawaiian species and transcripts")
 
-	pdf(file = "figures_and_panels/panel_mean_fold_change_enrichment.pdf",width=3,height=2,useDingbats=F)
-	print(mean_fold_change_enrichment_scatter)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_mean_fold_change_enrichment.pdf",width=3,height=2,useDingbats=F)
+#	print(mean_fold_change_enrichment_scatter)
+#	dev.off()
 
 ### PLOT LABELED CORE PARENT GENES ###
 
@@ -215,8 +215,8 @@ core_parent_gene_names_scatter <- ggplot(mean_fold_change_enrichment %>% filter(
 	ylab("Dmel ovary expression enrichment") +
 	xlab("mean log2 fold change across Hawaiian species and transcripts")
 
-	pdf(file = "figures_and_panels/panel_core_parent_gene_names.pdf",width=3,height=3,useDingbats=F)
-	print(core_parent_gene_names_scatter)
-	dev.off()
+#	pdf(file = "figures_and_panels/panel_core_parent_gene_names.pdf",width=3,height=3,useDingbats=F)
+#	print(core_parent_gene_names_scatter)
+#	dev.off()
 
 
