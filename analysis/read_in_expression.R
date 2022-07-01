@@ -156,13 +156,13 @@ plot_pca <- function(sp,exps_dds){
 
 pcas <- lapply(order(match(names(species_id),species_order)),plot_pca,exps_dds=exps_dds)
 
-pdf(file = "figures_and_panels/panel_pca_exemplar.pdf",width=3,height=2,useDingbats=F)
-print(plot_pca(1,exps_dds) + theme(legend.position = "right"))
-dev.off()
-
-pdf(file = "figures_and_panels/panel_pca_grid.pdf",width=9,height=11,useDingbats=F)
-grid.arrange(grobs = pcas,ncol=3)
-dev.off()
+#	pdf(file = "figures_and_panels/panel_pca_exemplar.pdf",width=3,height=2,useDingbats=F)
+#	print(plot_pca(1,exps_dds) + theme(legend.position = "right"))
+#	dev.off()
+#
+#	pdf(file = "figures_and_panels/panel_pca_grid.pdf",width=9,height=11,useDingbats=F)
+#	grid.arrange(grobs = pcas,ncol=3)
+#	dev.off()
 
 # plot principal component analyses within species
 plot_pca <- function(sp,exps_dds){
@@ -186,9 +186,9 @@ plot_pca <- function(sp,exps_dds){
 
 res_pcas <- lapply(seq(1:length(resequenced_species)),plot_pca,exps_dds=full_exps_dds)
 
-pdf(file = "figures_and_panels/panel_resequenced_pca_grid.pdf",width=9,height=3,useDingbats=F)
-grid.arrange(grobs = res_pcas,ncol=3)
-dev.off()
+#	pdf(file = "figures_and_panels/panel_resequenced_pca_grid.pdf",width=9,height=3,useDingbats=F)
+#	grid.arrange(grobs = res_pcas,ncol=3)
+#	dev.off()
 
 ### READING IN HOMOLOGY INFERENCE AND ANNOTATING THE DATA
 

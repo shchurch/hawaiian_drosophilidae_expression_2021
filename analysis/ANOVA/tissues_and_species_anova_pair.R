@@ -49,7 +49,7 @@ mean_props <- bind_rows(data.frame(depth=simplify(pair_depths),type="species",me
 	data.frame(depth=simplify(pair_depths),type="treatment",mean_prop=mean_prop_treatment))
 
 ggplot(data = mean_props,aes(y = mean_prop, x = depth, color = type)) + 
-	geom_point()  +
+	geom_point(alpha=0.8)  +
 	geom_smooth(method='lm')+ 
 	theme(legend.position = "none") + 
 	theme(text = element_text(size=6)) +
@@ -61,7 +61,7 @@ ggplot(data = mean_props,aes(y = mean_prop, x = depth, color = type)) +
 anova_phyl_dist <- lapply(seq(1:length(pair_depths)),function(x){anova_phyl_dist[[x]] %>% mutate(node_depth = pair_depths[x])})
 
 prop_phyl_dist <- ggplot(data = mean_props,aes(y = mean_prop, x = depth, color = type)) + 
-	geom_point()  +
+	geom_point(alpha=0.8)  +
 	geom_smooth(method='lm')+ 
 	theme(legend.position = "none") + 
 	theme(text = element_text(size=6)) +

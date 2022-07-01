@@ -221,8 +221,8 @@ save(head_enh_t_test,file="figures_and_panels/head_figures_and_panels/enhance_t_
 save(head_sup_t_test,file="figures_and_panels/head_figures_and_panels/suppress_t_test.RData")
 save(head_enh_sup_t_test,file="figures_and_panels/head_figures_and_panels/enhance_suppress_t_test.RData")
 
-# yolk protein gene family == 352dd19ce3c67e0ebb9b12e5d9189bb5
-target <- genetree_dmel_id %>% filter(genetree == "352dd19ce3c67e0ebb9b12e5d9189bb5") %>% pull(parent_gene)
+# yolk protein gene family == 5daa431b904a92eb1d01639824a469b6
+target <- genetree_dmel_id %>% filter(genetree == "5daa431b904a92eb1d01639824a469b6") %>% pull(parent_gene)
 target_path <- mitab %>% filter(parent_gene1 %in% target | parent_gene2 %in% target) 
 target_genetree <- genetree_dmel_id %>% filter(parent_gene %in% c(target_path$parent_gene1,target_path$parent_gene2)) %>%
 	mutate(name = gsub(";.*","",name))
