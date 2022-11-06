@@ -113,13 +113,13 @@ threshold_min_count <- 0 # arbitrary threshold
 significance_threshold <- 0.01
 exps_dds <- lapply(exps,wrap_deseq2)
 
-# count number of significantly differentiall expressed genes
-n_sig_up <- sapply(exps_dds,function(x){results(x) %>% as.data.frame %>% filter(pvalue < significance_threshold,log2FoldChange > 0) %>% nrow()})
-n_sig_down <- sapply(exps_dds,function(x){results(x) %>% as.data.frame %>% filter(pvalue < significance_threshold,log2FoldChange < 0) %>% nrow()})
+# count number of significantly differentially expressed genes
+n_sig_up <- sapply(exps_dds,function(x){results(x) %>% as.data.frame %>% filter(padj < significance_threshold,log2FoldChange > 0) %>% nrow()})
+n_sig_down <- sapply(exps_dds,function(x){results(x) %>% as.data.frame %>% filter(padj < significance_threshold,log2FoldChange < 0) %>% nrow()})
 n_total <- sapply(exps_dds,function(x){results(x) %>% as.data.frame %>% nrow()})
 
-head_n_sig_up <- sapply(exps_dds,function(x){results(x,name="treatment_head_vs_carcass") %>% as.data.frame %>% filter(pvalue < significance_threshold,log2FoldChange > 0) %>% nrow()})
-head_n_sig_down <- sapply(exps_dds,function(x){results(x,name="treatment_head_vs_carcass") %>% as.data.frame %>% filter(pvalue < significance_threshold,log2FoldChange < 0) %>% nrow()})
+head_n_sig_up <- sapply(exps_dds,function(x){results(x,name="treatment_head_vs_carcass") %>% as.data.frame %>% filter(padj < significance_threshold,log2FoldChange > 0) %>% nrow()})
+head_n_sig_down <- sapply(exps_dds,function(x){results(x,name="treatment_head_vs_carcass") %>% as.data.frame %>% filter(padj < significance_threshold,log2FoldChange < 0) %>% nrow()})
 head_n_total <- sapply(exps_dds,function(x){results(x,name="treatment_head_vs_carcass") %>% as.data.frame %>% nrow()})
 
 # Perform a DGE analysis on all libraries, including resequenced ones

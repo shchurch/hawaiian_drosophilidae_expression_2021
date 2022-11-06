@@ -347,12 +347,12 @@ plot_anova_meanfoldchange <- ggplot(anova_ov_red_meanfoldchange,aes(y = prop_tre
 
 plot_anova_meanfoldchange_TVGlabel <- ggplot(data=anova_ov_red_meanfoldchange %>% left_join(.,genetree_all_dmel_id,by="genetree") %>% filter(VG == "TVG",meanl2fc > -2),aes(y=prop_treatment,x=meanl2fc,label=name)) + 
 	geom_point(size=0.25,color="dark orange") +
-	geom_text_repel(max.overlaps=25,size=0.85,segment.size=0.1,box.padding=0.05) +
+	geom_text_repel(max.overlaps=11,size=1.5,segment.size=0.1,box.padding=0.05) +
 	theme(text = element_text(size=6)) +
 	ylab("proportion of variance across tissue") + 
 	xlab("mean log2 fold change") + 
 	scale_x_continuous(limits=c(-1,8))
 
-#	pdf(file = "figures_and_panels/panel_anova_vs_meanlog2foldchange_TVGlabel.pdf",width=3,height=3,useDingbats=F)
-#	print(plot_anova_meanfoldchange_TVGlabel)
-#	dev.off()
+	pdf(file = "figures_and_panels/panel_anova_vs_meanlog2foldchange_TVGlabel.pdf",width=3,height=3,useDingbats=F)
+	print(plot_anova_meanfoldchange_TVGlabel)
+	dev.off()

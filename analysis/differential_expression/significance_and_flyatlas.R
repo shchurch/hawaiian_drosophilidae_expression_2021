@@ -63,7 +63,7 @@ frac_sig_core <- annotated_genes %>% bind_rows() %>% filter(significant=="YES",d
 
 ### PLOT DGE VOLCANOS SHOWING SIGNIFICANCE
 
-# generate a volcano plot comparing the 
+# generate a volcano plot 
 plot_volcanos <- function(sp,ann_genes){
 	res_df <- ann_genes[[sp]] %>% as.data.frame()
 	volcano_plot <- ggplot(res_df, aes (x = log2FoldChange, y = -log10(padj))) +
@@ -209,14 +209,14 @@ mean_fold_change_enrichment_scatter <- ggplot(mean_fold_change_enrichment,aes(x 
 
 core_parent_gene_names_scatter <- ggplot(mean_fold_change_enrichment %>% filter(core_parent_gene == "YES"),aes(x = mean_ml2fc,y= enrichment,label = name)) +
 	geom_point(color="#C12756",size=0.1) +
-	geom_text_repel(max.overlaps=100,size=1,segment.size=0.1,box.padding=0.05) + 
+	geom_text_repel(max.overlaps=9,size=1.5,segment.size=0.1,box.padding=0.05) + 
 	theme(legend.position="none") +
 	theme(text = element_text(size=6)) +
 	ylab("Dmel ovary expression enrichment") +
 	xlab("mean log2 fold change across Hawaiian species and transcripts")
 
-#	pdf(file = "figures_and_panels/panel_core_parent_gene_names.pdf",width=3,height=3,useDingbats=F)
-#	print(core_parent_gene_names_scatter)
-#	dev.off()
+	pdf(file = "figures_and_panels/panel_core_parent_gene_names.pdf",width=3,height=3,useDingbats=F)
+	print(core_parent_gene_names_scatter)
+	dev.off()
 
 

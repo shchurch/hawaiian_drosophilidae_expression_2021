@@ -133,11 +133,29 @@ ovary_rel_changes <- get_evolutionary_changes(ave_ave_ratio %>%
 
 # for downstream analyses, use the ratio based values
 ovary_changes <- ovary_rel_changes 
+
+# identify outliers as 2 standard deviations from the global expression change 
+mean_ovary_change <- base::mean(ovary_changes$scaled_change,na.rm=T)
+sd_ovary_change <- stats::sd(ovary_changes$scaled_change,na.rm=T)
+
+mean_sd_changes_plot <- ggplot(ovary_changes, aes(x = scaled_change)) + 
+	geom_histogram(bins=100,fill="gray") + 
+	geom_vline(xintercept=mean_ovary_change,linetype="dotted",color="black") + 
+	geom_vline(xintercept=mean_ovary_change + sd_ovary_change,linetype="dotted",color="dark gray") +
+	geom_vline(xintercept=mean_ovary_change - sd_ovary_change,linetype="dotted",color="dark gray") +
+	geom_vline(xintercept=mean_ovary_change + 2*sd_ovary_change,linetype="dotted",color="red") +
+	geom_vline(xintercept=mean_ovary_change - 2*sd_ovary_change,linetype="dotted",color="red") 
+
+ovary_changes <- ovary_changes %>% mutate(outlier = ifelse(
+	scaled_change <= (mean_ovary_change + 2*sd_ovary_change) & 
+		scaled_change >= (mean_ovary_change - 2*sd_ovary_change),
+	FALSE,TRUE))
+
+# get unique keys
 full_keys <- ovary_changes %>% 
 	filter(as.integer(child_node) < 13) %>% 
 	group_by(key) %>% tally() %>% filter(n == 12) %>% 
 	pull(key)
-
 full_key_samp <- sample(full_keys,100)
 
 panel_dist_changes <- ggplot(ovary_changes %>% filter(key %in% full_key_samp),aes(y = scaled_change,x=key)) + 
@@ -283,6 +301,17 @@ full_cormat <- ovary_changes %>%
 	select(-child_node) %>% 
 	cor(.,method="pearson",use="everything")
 
+ovary_changes_no_outliers <- ovary_changes %>% filter(outlier == FALSE) 
+full_keys_no_outliers <- ovary_changes_no_outliers %>% 
+	filter(as.integer(child_node) < 13) %>% 
+	group_by(key) %>% tally() %>% filter(n == 12) %>% 
+	pull(key)
+cormat_no_outliers <- ovary_changes_no_outliers %>% 
+	filter(key %in% full_keys_no_outliers) %>% 
+	select(key,child_node,scaled_change) %>% 
+	spread(.,key,scaled_change)  %>% 
+	select(-child_node) %>% 
+	cor(.,method="pearson",use="everything")
 
 mitab <- read.delim("analysis/data/physical_interactions_mitab_fb_2021_04.tsv",header=F,stringsAsFactors=F,comment.char="#") %>% 
 	mutate(parent_gene1 = gsub("flybase:(.*)","\\1",V1),
@@ -337,7 +366,6 @@ suppress <- genetic_interactions %>% filter(interaction == "suppressible") %>%
 	filter(genetree1 %in% rownames(full_cormat),genetree2 %in% rownames(full_cormat)) %>% 
 	filter(genetree1 != genetree2) %>% 
 	na.omit
-
 
 enhance_cor <- sapply(seq(1:nrow(enhance)),function(x){full_cormat[enhance$genetree1[x],enhance$genetree2[x]]})
 suppress_cor <- sapply(seq(1:nrow(suppress)),function(x){full_cormat[suppress$genetree1[x],suppress$genetree2[x]]})
