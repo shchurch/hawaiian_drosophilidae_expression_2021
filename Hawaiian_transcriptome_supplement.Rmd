@@ -78,6 +78,7 @@ set.seed(84095)
 #    
 #    save(core_parent_genes,file="analysis/results_Robjects/core_parent_genes.RData")
 #    save(full_cormat,file="analysis/results_Robjects/full_correlation_matrix.RData")
+#    save(cormat_no_outliers,file="analysis/results_Robjects/no_outliers_correlation_matrix.RData")
 #    save(target_int_changes,file="analysis/results_Robjects/target_int_changes.RData")
 #    save(genetree_all_dmel_id,file="analysis/results_Robjects/genetree_all_dmel_id.RData")
 #    save(ovary_changes,file="analysis/results_Robjects/ovary_changes.RData")    
